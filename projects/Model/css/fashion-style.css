@@ -67,3 +67,34 @@
 .fashion-profile .profile-box .box .text h3 {
     margin-bottom: 10px;
 }
+/* 모델 목록과 필터 */
+.main { margin-bottom: 70px; min-height: 600px; }
+.main .text { width: 100%; padding: 0 20px; text-shadow: 0 3px 25px #000; }
+.fashion-profile { width: calc(100% - 60px); }
+.fashion-profile .profile-box { gap: 30px; }
+.fashion-profile .profile-box .box img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+.fashion-profile .profile-box .box a { display: block; margin: 0; }
+.fashion-profile .profile-box .box .text { padding: 20px; }
+.fashion-profile .profile-box .box:hover { transform: translateY(-4px); }
+.filter-area { margin-bottom: 36px; }
+.filter-area h2 { font-size: 36px; margin-bottom: 12px; }
+.filter-area > p { color: #bdbdbd; }
+.filter-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+.filter-buttons button { background: transparent; border: 1px solid #777; padding: 10px 24px; }
+.filter-buttons button[aria-pressed="true"] { color: #222; background: #cdcdcd; border-color: #cdcdcd; }
+.filter-area label { display: block; margin-bottom: 8px; }
+#model-search { width: min(100%, 380px); padding: 12px 16px; color: #fff; background: #292929; border: 1px solid #777; margin-bottom: 16px; }
+.nav .on a { color: inherit; border: 0; font-weight: 500; }
+.gnb .nav a[aria-current="page"] { color: #dd741e; }
+@media (max-width: 900px) {
+    .fashion-profile .profile-box { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .main .text h1 { font-size: 54px; letter-spacing: 2px; }
+}
+@media (max-width: 600px) {
+    .fashion-profile { width: calc(100% - 40px); }
+    .fashion-profile .profile-box { gap: 12px; }
+    .fashion-profile .profile-box .box .text { padding: 12px; }
+    .fashion-profile .profile-box p { font-size: 12px; }
+    .main .text h1 { font-size: 38px; }
+    .main .text h2 { font-size: 17px; }
+}

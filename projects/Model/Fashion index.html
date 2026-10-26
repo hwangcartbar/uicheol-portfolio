@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion 웹</title>
+    <title>Fashion | MODULER</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fashion-style.css">
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>
-    <!-- 포트폴리오 복귀 버튼 -->
-    <link rel="stylesheet" href="../../css/portfolio.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#content">본문 바로가기</a>
     <div id="wrap">
         <div class="inner">
             <header>
@@ -25,37 +24,37 @@
                         </div>
                         <div class="nav">
                             <div class="on">
-                                <a href="">Fashion</a>
+                                <a href="Fashion index.html">Fashion</a>
                             </div>
-                            <a href="">Commercial</a>
-                            <a href="">Beauty</a>
-                            <a href="">Runway</a>
-                            <a href="">Magazine</a>
+                            <a href="Fashion index.html?category=Commercial">Commercial</a>
+                            <a href="Fashion index.html?category=Beauty">Beauty</a>
+                            <a href="Fashion index.html?category=Runway">Runway</a>
+                            <a href="index.html#updates">Magazine</a>
                         </div>
                         <div class="menu-container">
                             <div class="btn-menu">
-                                <a href="#none">
+                                <a href="#menu" role="button" aria-expanded="false" aria-controls="menu" aria-label="메뉴 열기">
                                     <img src="img/icon-hamburger.webp" alt="메뉴열기">
                                 </a>
                             </div>
-                            <div class="menu">
+                            <div class="menu" id="menu">
                                 <div class="gnb2">
                                     <div class="box">
-                                        <a href="">About</a>
-                                        <a href="">News</a>
-                                        <a href="">Contact</a>
+                                        <a href="#about" data-info="about">About</a>
+                                        <a href="index.html#news">News</a>
+                                        <a href="#contact">Contact</a>
                                     </div>
                                     <div class="box">
-                                        <a href="">Fashion</a>
-                                        <a href="">Commercial</a>
-                                        <a href="">Beauty</a>
-                                        <a href="">Runway</a>
-                                        <a href="">Magazine</a>
+                                        <a href="Fashion index.html">Fashion</a>
+                                        <a href="Fashion index.html?category=Commercial">Commercial</a>
+                                        <a href="Fashion index.html?category=Beauty">Beauty</a>
+                                        <a href="Fashion index.html?category=Runway">Runway</a>
+                                        <a href="index.html#updates">Magazine</a>
                                     </div>
                                     <div class="menu-icon">
-                                        <a href=""><img src="img/instagram.webp" alt=""></a>
-                                        <a href=""><img src="img/social.webp" alt=""></a>
-                                        <a href=""><img src="img/youtube.webp" alt=""></a>
+                                        <a href="#detail"><img src="img/instagram.webp" alt=""></a>
+                                        <a href="#detail"><img src="img/social.webp" alt=""></a>
+                                        <a href="#detail"><img src="img/youtube.webp" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +62,7 @@
                     </div>
                 </div>
             </header>
-            <tbody>
+            <main id="content">
                 <div class="main">
                     <div class="text">
                         <h1>FASHION</h1>
@@ -71,9 +70,17 @@
                     </div>
                 </div>
                 <div class="fashion-profile">
+                    <div class="filter-area">
+                        <h2>OUR MODELS</h2>
+                        <p>분야별 포트폴리오를 살펴보세요. 모델 이름은 시안용 가명입니다.</p>
+                        <div class="filter-buttons" aria-label="모델 분야"></div>
+                        <label for="model-search">모델 이름 검색</label>
+                        <input id="model-search" type="search" placeholder="이름을 입력하세요">
+                        <p class="filter-count" aria-live="polite"></p>
+                    </div>
                     <div class="profile-box">
                         <div class="box">
-                            <a href="">
+                            <a href="#detail">
                                 <img src="img/Fashion-img/profile01.webp" alt="">
                                 <div class="text">
                                     <h3>Sefia C.</h3>
@@ -85,10 +92,10 @@
                             </a>
                         </div>
                         <div class="box">
-                            <a href="">
+                            <a href="#detail">
                                 <img src="img/Fashion-img/profile02.webp" alt="">
                                 <div class="text">
-                                    <h3>Sefia C.</h3>
+                                    <h3>Ana K.</h3>
                                     <p>
                                         Editorial / High Fashion
                                         <br>Featured Work
@@ -97,10 +104,10 @@
                             </a>
                         </div>
                         <div class="box">
-                            <a href="">
+                            <a href="#detail">
                                 <img src="img/Fashion-img/profile03.webp" alt="">
                                 <div class="text">
-                                    <h3>Sefia C.</h3>
+                                    <h3>Lian B.</h3>
                                     <p>
                                         Editorial / High Fashion
                                         <br>Featured Work
@@ -109,10 +116,10 @@
                             </a>
                         </div>
                         <div class="box">
-                            <a href="">
+                            <a href="#detail">
                                 <img src="img/Fashion-img/profile04.webp" alt="">
                                 <div class="text">
-                                    <h3>Sefia C.</h3>
+                                    <h3>Kenji T.</h3>
                                     <p>
                                         Editorial / High Fashion
                                         <br>Featured Work
@@ -121,10 +128,10 @@
                             </a>
                         </div>
                         <div class="box">
-                            <a href="">
+                            <a href="#detail">
                                 <img src="img/Fashion-img/profile05.webp" alt="">
                                 <div class="text">
-                                    <h3>Sefia C.</h3>
+                                    <h3>Mina R.</h3>
                                     <p>
                                         Editorial / High Fashion
                                         <br>Featured Work
@@ -133,10 +140,10 @@
                             </a>
                         </div>
                         <div class="box">
-                            <a href="">
+                            <a href="#detail">
                                 <img src="img/Fashion-img/profile06.webp" alt="">
                                 <div class="text">
-                                    <h3>Sefia C.</h3>
+                                    <h3>Noah J.</h3>
                                     <p>
                                         Editorial / High Fashion
                                         <br>Featured Work
@@ -145,10 +152,10 @@
                             </a>
                         </div>
                         <div class="box">
-                            <a href="">
+                            <a href="#detail">
                                 <img src="img/Fashion-img/profile07.webp" alt="">
                                 <div class="text">
-                                    <h3>Sefia C.</h3>
+                                    <h3>Ella S.</h3>
                                     <p>
                                         Editorial / High Fashion
                                         <br>Featured Work
@@ -157,10 +164,10 @@
                             </a>
                         </div>
                         <div class="box">
-                            <a href="">
+                            <a href="#detail">
                                 <img src="img/Fashion-img/profile08.webp" alt="">
                                 <div class="text">
-                                    <h3>Sefia C.</h3>
+                                    <h3>Leo H.</h3>
                                     <p>
                                         Editorial / High Fashion
                                         <br>Featured Work
@@ -169,10 +176,10 @@
                             </a>
                         </div>
                         <div class="box">
-                            <a href="">
+                            <a href="#detail">
                                 <img src="img/Fashion-img/profile09.webp" alt="">
                                 <div class="text">
-                                    <h3>Sefia C.</h3>
+                                    <h3>Yuna P.</h3>
                                     <p>
                                         Editorial / High Fashion
                                         <br>Featured Work
@@ -181,10 +188,10 @@
                             </a>
                         </div>
                         <div class="box">
-                            <a href="">
+                            <a href="#detail">
                                 <img src="img/Fashion-img/profile10.webp" alt="">
                                 <div class="text">
-                                    <h3>Sefia C.</h3>
+                                    <h3>Theo M.</h3>
                                     <p>
                                         Editorial / High Fashion
                                         <br>Featured Work
@@ -193,10 +200,10 @@
                             </a>
                         </div>
                         <div class="box">
-                            <a href="">
+                            <a href="#detail">
                                 <img src="img/Fashion-img/profile11.webp" alt="">
                                 <div class="text">
-                                    <h3>Sefia C.</h3>
+                                    <h3>Sora L.</h3>
                                     <p>
                                         Editorial / High Fashion
                                         <br>Featured Work
@@ -205,10 +212,10 @@
                             </a>
                         </div>
                         <div class="box">
-                            <a href="">
+                            <a href="#detail">
                                 <img src="img/Fashion-img/profile12.webp" alt="">
                                 <div class="text">
-                                    <h3>Sefia C.</h3>
+                                    <h3>Alex D.</h3>
                                     <p>
                                         Editorial / High Fashion
                                         <br>Featured Work
@@ -218,48 +225,48 @@
                         </div>
                     </div>
                 </div>
-            </tbody>
-            <tfoot>
+            </main>
+            <footer>
                 <div class="foot">
                     <div class="menu-bar">
-                        <div class="contact">
+                        <div class="contact" id="contact">
                             <h3>CONTACT</h3>
                             <p>
-                                Address, Colorado,
-                                <br>Phone, VM 15039
+                                MODULER — Portfolio Project
+                                <br>모델 에이전시 콘셉트 웹사이트
                             </p>
-                            <p>Phone: 123 457 7890</p>
-                            <p>Email: @moduler.com</p>
+                            <p>실제 예약·섭외 서비스는 제공하지 않습니다.</p>
+                            <p>문의 채널 준비 중</p>
                         </div>
                         <div class="services">
                             <h3>SERVICES</h3>
-                            <a href="">Fashion</a>
-                            <a href="">Commercial</a>
-                            <a href="">Beauty</a>
-                            <a href="">Runway Event</a>
-                            <a href="">Magazine</a>
+                            <a href="Fashion index.html">Fashion</a>
+                            <a href="Fashion index.html?category=Commercial">Commercial</a>
+                            <a href="Fashion index.html?category=Beauty">Beauty</a>
+                            <a href="Fashion index.html?category=Runway">Runway Event</a>
+                            <a href="index.html#updates">Magazine</a>
                         </div>
                         <div class="explore">
                             <h3>EXPLORE</h3>
-                            <a href="">About</a>
-                            <a href="">News</a>
-                            <a href="">Contact</a>
+                            <a href="#about" data-info="about">About</a>
+                            <a href="index.html#news">News</a>
+                            <a href="#contact">Contact</a>
                         </div>
                         <div class="seocial">
                             <h3>SOCIAL</h3>
-                            <a href="">Instagram</a>
-                            <a href="">YouTube</a>
-                            <a href="">X</a>
+                            <a href="#detail">Instagram</a>
+                            <a href="#detail">YouTube</a>
+                            <a href="#detail">X</a>
                         </div>
                     </div>
                     <div class="foot-bar">
-                        <p>© 2024 MODULER. All Rights Reserved.</p>
-                        <p>Privacy Policy / Terms of Uses</p>
+                        <p>© 2026 MODULER. All Rights Reserved.</p>
+                        <p>Concept website · Images for portfolio presentation</p>
                     </div>
                 </div>
-            </tfoot>
+            </footer>
         </div>
     </div>
-<a href="../../index.html#work" class="portfolio-back">← 포트폴리오</a></body>
+</body>
 
 </html>

@@ -6,55 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Model</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
-    <script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>
-    <!-- 포트폴리오 복귀 버튼 -->
-    <link rel="stylesheet" href="../../css/portfolio.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#content">본문 바로가기</a>
     <div id="wrap">
         <div class="inner">
             <header>
                 <div class="gnb">
                     <div class="gnb-box">
                         <div class="logo">
-                            <a href=""><span>MODULER</span></a>
+                            <a href="index.html"><span>MODULER</span></a>
                         </div>
                         <div class="nav">
-                            <a href="Fashion%20index.html">Fashion</a>
-                            <a href="">Commercial</a>
-                            <a href="">Beauty</a>
-                            <a href="">Runway</a>
-                            <a href="">Magazine</a>
+                            <a href="Fashion index.html">Fashion</a>
+                            <a href="Fashion index.html?category=Commercial">Commercial</a>
+                            <a href="Fashion index.html?category=Beauty">Beauty</a>
+                            <a href="Fashion index.html?category=Runway">Runway</a>
+                            <a href="index.html#updates">Magazine</a>
                         </div>
                         <div class="menu-container">
                             <div class="btn-menu">
-                                <a href="#none">
+                                <a href="#menu" role="button" aria-expanded="false" aria-controls="menu" aria-label="메뉴 열기">
                                     <img src="img/icon-hamburger.webp" alt="메뉴열기">
                                 </a>
                             </div>
-                            <div class="menu">
+                            <div class="menu" id="menu">
                                 <div class="gnb2">
                                     <div class="box">
-                                        <a href="">About</a>
-                                        <a href="">News</a>
-                                        <a href="">Contact</a>
+                                        <a href="#about" data-info="about">About</a>
+                                        <a href="index.html#news">News</a>
+                                        <a href="#contact">Contact</a>
                                     </div>
                                     <div class="box">
-                                        <a href="">Fashion</a>
-                                        <a href="">Commercial</a>
-                                        <a href="">Beauty</a>
-                                        <a href="">Runway</a>
-                                        <a href="">Magazine</a>
+                                        <a href="Fashion index.html">Fashion</a>
+                                        <a href="Fashion index.html?category=Commercial">Commercial</a>
+                                        <a href="Fashion index.html?category=Beauty">Beauty</a>
+                                        <a href="Fashion index.html?category=Runway">Runway</a>
+                                        <a href="index.html#updates">Magazine</a>
                                     </div>
                                     <div class="menu-icon">
-                                        <a href=""><img src="img/instagram.webp" alt=""></a>
-                                        <a href=""><img src="img/social.webp" alt=""></a>
-                                        <a href=""><img src="img/youtube.webp" alt=""></a>
+                                        <a href="#detail"><img src="img/instagram.webp" alt=""></a>
+                                        <a href="#detail"><img src="img/social.webp" alt=""></a>
+                                        <a href="#detail"><img src="img/youtube.webp" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -62,8 +58,8 @@
                     </div>
                 </div>
             </header>
-            <tbody>
-                <main class="main">
+            <main id="content">
+                <section class="main" aria-label="MODULER 소개">
                     <div class="main-img">
                         <img src="img/main-img01.webp" alt="">
                         <img src="img/main-img02.webp" alt="">
@@ -73,104 +69,104 @@
                         <h1>MODULER</h1>
                         <h2>The Future of Fashion</h2>
                     </div>
-                </main>
+                </section>
                 <div class="content-section">
                     <div class="section">
-                        <div class="featured">
+                        <div class="featured" id="featured">
                             <h2>FEATURED WORK & MODELS</h2>
                             <div class="box-area">
-                                <a href="">
+                                <a href="#detail">
                                     <div class="box">
                                         <div class="img">
                                             <img src="img/featured-img01.webp" alt="">
                                         </div>
                                         <h3>VOGUE</h3>
                                         <div class="text">
-                                            <p class="line">Editerial</p>
-                                            <p>Fashlon</p>
+                                            <p class="line">Editorial</p>
+                                            <p>Fashion</p>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="#detail">
                                     <div class="box">
                                         <div class="img">
                                             <img src="img/featured-img02.webp" alt="">
                                         </div>
                                         <h3>VOGUE</h3>
                                         <div class="text">
-                                            <p class="line">Editerial</p>
-                                            <p>Fashlon</p>
+                                            <p class="line">Editorial</p>
+                                            <p>Fashion</p>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="#detail">
                                     <div class="box">
                                         <div class="img">
                                             <img src="img/featured-img03.webp" alt="">
                                         </div>
                                         <h3>VOGUE</h3>
                                         <div class="text">
-                                            <p class="line">Editerial</p>
-                                            <p>Fashlon</p>
+                                            <p class="line">Editorial</p>
+                                            <p>Fashion</p>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="#detail">
                                     <div class="box">
                                         <div class="img">
                                             <img src="img/featured-img04.webp" alt="">
                                         </div>
                                         <h3>VOGUE</h3>
                                         <div class="text">
-                                            <p class="line">Editerial</p>
-                                            <p>Fashlon</p>
+                                            <p class="line">Editorial</p>
+                                            <p>Fashion</p>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="#detail">
                                     <div class="box">
                                         <div class="img">
                                             <img src="img/featured-img05.webp" alt="">
                                         </div>
                                         <h3>VOGUE</h3>
                                         <div class="text">
-                                            <p class="line">Editerial</p>
-                                            <p>Fashlon</p>
+                                            <p class="line">Editorial</p>
+                                            <p>Fashion</p>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="#detail">
                                     <div class="box">
                                         <div class="img">
                                             <img src="img/featured-img06.webp" alt="">
                                         </div>
                                         <h3>VOGUE</h3>
                                         <div class="text">
-                                            <p class="line">Editerial</p>
-                                            <p>Fashlon</p>
+                                            <p class="line">Editorial</p>
+                                            <p>Fashion</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="news">
+                        <div class="news" id="news">
                             <div class="box-area">
                                 <h3>
                                     NEWS &
                                     <br> UPDATES
                                 </h3>
                                 <div class="box">
-                                    <a href="">
+                                    <a href="#detail">
                                         <img src="img/news-img01.webp" alt="">
                                     </a>
                                 </div>
                                 <div class="box">
-                                    <a href="">
+                                    <a href="#detail">
                                         <img src="img/news-img02.webp" alt="">
                                     </a>
                                 </div>
                                 <div class="box">
-                                    <a href="">
+                                    <a href="#detail">
                                         <img src="img/news-img03.webp" alt="">
                                     </a>
                                 </div>
@@ -199,213 +195,147 @@
                                 <h2>MEET OUR MODELS</h2>
                             </div>
                             <!-- Swiper -->
-                            <div #swiperRef="" class="swiper models-Swiper">
+                            <div class="swiper models-Swiper" aria-label="모델 갤러리">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a href="">
+                                        <a href="#detail">
                                             <img src="img/profile mini-img01.webp" alt="">
                                         </a>
                                         <p>Ana K.</p>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="">
+                                        <a href="#detail">
                                             <img src="img/profile mini-img02.webp" alt="">
                                         </a>
                                         <p>Lian B.</p>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="">
+                                        <a href="#detail">
                                             <img src="img/profile mini-img03.webp" alt="">
                                         </a>
                                         <p>Sefia C.</p>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="">
+                                        <a href="#detail">
                                             <img src="img/profile mini-img04.webp" alt="">
                                         </a>
                                         <p>Kenji T.</p>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="">
+                                        <a href="#detail">
                                             <img src="img/profile mini-img05.webp" alt="">
                                         </a>
                                         <p>Ana K.</p>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="">
+                                        <a href="#detail">
                                             <img src="img/profile mini-img06.webp" alt="">
                                         </a>
                                         <p>Lian B.</p>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="">
+                                        <a href="#detail">
                                             <img src="img/profile mini-img07.webp" alt="">
                                         </a>
                                         <p>Sefia C.</p>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="">
+                                        <a href="#detail">
                                             <img src="img/profile mini-img08.webp" alt="">
                                         </a>
                                         <p>Kenji T.</p>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="">
+                                        <a href="#detail">
                                             <img src="img/profile mini-img09.webp" alt="">
                                         </a>
                                         <p>Ana K.</p>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="">
+                                        <a href="#detail">
                                             <img src="img/profile mini-img10.webp" alt="">
                                         </a>
                                         <p>Lian B.</p>
                                     </div>
                                 </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-pagination"></div>
+                                <button class="swiper-button-next" aria-label="다음 모델">→</button>
+                                <button class="swiper-button-prev" aria-label="이전 모델">←</button>
+                                <div class="swiper-pagination" aria-live="polite"></div>
                             </div>
-
-                            <!-- <p class="append-buttons">
-                            <button class="prepend-2-slides">Prepend 2 Slides</button>
-                            <button class="prepend-slide">Prepend Slide</button>
-                            <button class="append-slide">Append Slide</button>
-                            <button class="append-2-slides">Append 2 Slides</button>
-                        </p> -->
-
-                            <!-- Swiper JS -->
-                            <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-                            <!-- Initialize Swiper -->
-                            <script>
-                                var swiper = new Swiper(".models-Swiper", {
-                                    slidesPerView: 4,
-                                    centeredSlides: true,
-                                    spaceBetween: 30,
-                                    pagination: {
-                                        el: ".swiper-pagination",
-                                        type: "fraction",
-                                    },
-                                    navigation: {
-                                        nextEl: ".swiper-button-next",
-                                        prevEl: ".swiper-button-prev",
-                                    },
-                                });
-
-                                var appendNumber = 4;
-                                var prependNumber = 1;
-                                document
-                                    .querySelector(".prepend-2-slides")
-                                    .addEventListener("click", function (e) {
-                                        e.preventDefault();
-                                        swiper.prependSlide([
-                                            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                                            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                                        ]);
-                                    });
-                                document
-                                    .querySelector(".prepend-slide")
-                                    .addEventListener("click", function (e) {
-                                        e.preventDefault();
-                                        swiper.prependSlide(
-                                            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-                                        );
-                                    });
-                                document
-                                    .querySelector(".append-slide")
-                                    .addEventListener("click", function (e) {
-                                        e.preventDefault();
-                                        swiper.appendSlide(
-                                            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-                                        );
-                                    });
-                                document
-                                    .querySelector(".append-2-slides")
-                                    .addEventListener("click", function (e) {
-                                        e.preventDefault();
-                                        swiper.appendSlide([
-                                            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                                            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                                        ]);
-                                    });
-                            </script>
                         </div>
-                        <div class="updates">
+                        <div class="updates" id="updates">
                             <div class="card-box">
-                                <a href="">
+                                <a href="#detail">
                                     <img src="img/updates-img01.webp" alt="">
                                 </a>
                                 <div class="text">
                                     <h3>New Dimension of Fashion?</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                    </p>
+                                    <p>패션과 인물의 다양한 시선을 담은 MODULER 에디토리얼을 만나보세요.</p>
                                 </div>
                             </div>
                             <div class="card-box">
-                                <a href="">
+                                <a href="#detail">
                                     <img src="img/updates-img02.webp" alt="">
                                 </a>
                                 <div class="text">
                                     <h3>Year End Trends also fast</h3>
-                                    <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor ut labore et dolore.</p>
+                                    <p>패션과 인물의 다양한 시선을 담은 MODULER 에디토리얼을 만나보세요.</p>
                                 </div>
                             </div>
                             <div class="card-box">
-                                <a href="">
+                                <a href="#detail">
                                     <img src="img/updates-img03.webp" alt="">
                                 </a>
                                 <div class="text">
                                     <h3>New Dimension platforms?</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                    </p>
+                                    <p>패션과 인물의 다양한 시선을 담은 MODULER 에디토리얼을 만나보세요.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </tbody>
-            <tfoot>
+            </main>
+            <footer>
                 <div class="foot">
                     <div class="menu-bar">
-                        <div class="contact">
+                        <div class="contact" id="contact">
                             <h3>CONTACT</h3>
                             <p>
-                                Address, Colorado,
-                                <br>Phone, VM 15039
+                                MODULER — Portfolio Project
+                                <br>모델 에이전시 콘셉트 웹사이트
                             </p>
-                            <p>Phone: 123 457 7890</p>
-                            <p>Email: @moduler.com</p>
+                            <p>실제 예약·섭외 서비스는 제공하지 않습니다.</p>
+                            <p>문의 채널 준비 중</p>
                         </div>
                         <div class="services">
                             <h3>SERVICES</h3>
-                            <a href="">Fashion</a>
-                            <a href="">Commercial</a>
-                            <a href="">Beauty</a>
-                            <a href="">Runway Event</a>
-                            <a href="">Magazine</a>
+                            <a href="Fashion index.html">Fashion</a>
+                            <a href="Fashion index.html?category=Commercial">Commercial</a>
+                            <a href="Fashion index.html?category=Beauty">Beauty</a>
+                            <a href="Fashion index.html?category=Runway">Runway Event</a>
+                            <a href="index.html#updates">Magazine</a>
                         </div>
                         <div class="explore">
                             <h3>EXPLORE</h3>
-                            <a href="">About</a>
-                            <a href="">News</a>
-                            <a href="">Contact</a>
+                            <a href="#about" data-info="about">About</a>
+                            <a href="index.html#news">News</a>
+                            <a href="#contact">Contact</a>
                         </div>
                         <div class="seocial">
                             <h3>SOCIAL</h3>
-                            <a href="">Instagram</a>
-                            <a href="">YouTube</a>
-                            <a href="">X</a>
+                            <a href="#detail">Instagram</a>
+                            <a href="#detail">YouTube</a>
+                            <a href="#detail">X</a>
                         </div>
                     </div>
                     <div class="foot-bar">
-                        <p>© 2024 MODULER. All Rights Reserved.</p>
-                        <p>Privacy Policy / Terms of Uses</p>
+                        <p>© 2026 MODULER. All Rights Reserved.</p>
+                        <p>Concept website · Images for portfolio presentation</p>
                     </div>
                 </div>
-            </tfoot>
+            </footer>
         </div>
     </div>
-<a href="../../index.html#work" class="portfolio-back">← 포트폴리오</a></body>
+</body>
 
 </html>
