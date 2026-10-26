@@ -1,0 +1,221 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>diagnostics</title>
+    <link rel="stylesheet" href="../css/diagnostics.css">
+    <script src="../js/diagnostics.js" defer></script>
+    <!-- 포트폴리오 복귀 버튼 -->
+    <link rel="stylesheet" href="../../../css/portfolio.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <a href="../index.html">
+                    <div class="logo">
+                        <img src="../images/logo/logo-black.webp" alt="">
+                    </div>
+                </a>
+                <nav class="gnb" aria-label="주 메뉴">
+                    <ul class="gnb-list">
+                        <!-- 하위 메뉴 없음 -->
+                        <li class="gnb-item">
+                            <a href="./campaign.html">캠페인 안내</a>
+                        </li>
+
+                        <li class="gnb-item">
+                            <a class="on" href="./diagnostics.html">자가진단</a>
+                        </li>
+
+                        <!-- 피해사례·대응 -->
+                        <li class="gnb-item">
+                            <a href="./damage case.html">피해사례·대응</a>
+
+                            <div class="gnb-submenu">
+                                <p class="submenu-title">피해사례·대응</p>
+
+                                <ul class="submenu-list">
+                                    <li>
+                                        <a href="./damage case.html#privacy">개인정보 유출</a>
+                                    </li>
+                                    <li>
+                                        <a href="./damage case.html#phishing">피싱·스미싱</a>
+                                    </li>
+                                    <li>
+                                        <a href="./damage case.html#deepfake">생성형 AI·딥페이크</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- 권리·서비스 -->
+                        <li class="gnb-item">
+                            <a href="./service.html">권리·서비스</a>
+
+                            <div class="gnb-submenu">
+                                <div class="submenu-group">
+                                    <p class="submenu-title">개인정보 권리</p>
+
+                                    <ul class="submenu-list">
+                                        <li><a href="./service.html#rights">열람·정정·삭제 요구</a></li>
+                                        <li><a href="./service.html#identity">본인확인 내역 조회</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="submenu-group">
+                                    <p class="submenu-title">개인정보 관리 서비스</p>
+
+                                    <ul class="submenu-list">
+                                        <li><a href="./service.html#withdrawal">웹사이트 회원탈퇴</a></li>
+                                        <li><a href="./service.html#eraser">지우개 서비스</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="submenu-group">
+                                    <ul class="submenu-list">
+                                        <li><a href="./service.html#leak">털린 내 정보 찾기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- 안전가이드 -->
+                        <li class="gnb-item">
+                            <a href="#">안전가이드</a>
+
+                            <div class="gnb-submenu">
+                                <ul class="submenu-list">
+                                    <li><a href="#">교육자료 다운로드</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="diagnostics-hero">
+            <div class="inner">
+                <div class="diagnostics-hero-content">
+                    <h1 class="diagnostics-hero-title">
+                        <span>나의 개인정보 보호 습관</span>
+                        <span>얼마나 안전할까요?</span>
+                    </h1>
+
+                    <p class="diagnostics-hero-description">
+                        10개의 질문으로 나의 보호 습관을 확인하세요.
+                    </p>
+
+                    <ul class="diagnostics-hero-tags">
+                        <li>약 2분 소요</li>
+                        <li>개인정보 입력 없이 조사</li>
+                    </ul>
+                </div>
+
+                <!-- 배경 장식이 포함된 투명 캐릭터 이미지 -->
+                <img src="../images/diagnostics_image/hero-character.webp" alt="" class="diagnostics-hero-character">
+            </div>
+        </section>
+
+        <section class="diagnosis-survey" aria-label="개인정보 보호 습관 설문">
+            <div class="inner">
+                <!-- 이전 버튼 -->
+                <button type="button" class="survey-arrow survey-prev" aria-label="이전 질문" disabled>
+                    <img src="../images/diagnostics_image/prev.webp" alt="">
+                </button>
+
+                <div class="survey-card">
+                    <!-- 진행 단계 -->
+                    <ol class="survey-steps">
+                        <li class="is-active" aria-current="step">
+                            <span>01</span> 습관 점검
+                        </li>
+                        <li><span>02</span> 결과 확인</li>
+                        <li><span>03</span> 실천하기</li>
+                    </ol>
+
+                    <!-- 문항 진행률 -->
+                    <div class="survey-progress">
+                        <p class="survey-count"></p>
+                        <div class="survey-progress-track" role="progressbar" aria-label="설문 진행" aria-valuemin="0">
+                            <div class="survey-progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <!-- 질문 -->
+                    <h2 class="survey-question" tabindex="-1"></h2>
+                    <p class="survey-description">
+                        평소 나의 사용 습관에 가장 가까운 답변을 선택해주세요.
+                    </p>
+
+                    <!-- 같은 name의 radio라 하나만 선택 가능 -->
+                    <fieldset class="survey-answers">
+                        <legend class="survey-sr-only">질문에 대한 답변</legend>
+
+                        <label class="survey-option">
+                            <input type="radio" name="survey-answer" value="yes">
+                            <span class="survey-option-box">
+                                <span class="survey-option-circle" aria-hidden="true"></span>
+                                <span>YES</span>
+                            </span>
+                        </label>
+
+                        <label class="survey-option">
+                            <input type="radio" name="survey-answer" value="no">
+                            <span class="survey-option-box">
+                                <span class="survey-option-circle" aria-hidden="true"></span>
+                                <span>NO</span>
+                            </span>
+                        </label>
+                    </fieldset>
+
+                    <p class="survey-complete" role="status" hidden>
+                        모든 질문에 답변했어요.
+                    </p>
+                </div>
+
+                <!-- 다음 버튼 -->
+                <button type="button" class="survey-arrow survey-next" aria-label="다음 질문" disabled>
+                    <img src="../images/diagnostics_image/next.webp" alt="">
+                </button>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="inner">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <!-- 흰색 글자 로고의 실제 파일명으로 변경 -->
+                        <img src="../images/logo/logo-white.webp" alt="지켜봐요" class="footer-logo">
+                        <p>오늘도 안전한, 우리의 개인정보</p>
+                    </div>
+
+                    <nav class="footer-nav" aria-label="푸터 메뉴">
+                        <ul>
+                            <li><a href="./campaign.html">캠페인 안내</a></li>
+                            <li><a href="./diagnostics.html">자가진단</a></li>
+                            <li><a href="./damage case.html">피해사례·대응</a></li>
+                            <li><a href="./service.html">권리·서비스</a></li>
+                            <li><a href="./guide.html">안전가이드</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-bottom">
+                    <ul class="footer-links">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+
+                    <p class="footer-copyright">
+                        © 2026 지켜봐요. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+<a href="../../../index.html#work" class="portfolio-back">← 포트폴리오</a></body>
+
+</html>

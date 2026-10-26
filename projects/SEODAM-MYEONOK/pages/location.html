@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEODAM MYEONOK | 매장</title>
+    <link rel="stylesheet" href="../css/location.css">
+    <!-- 포트폴리오 복귀 버튼 -->
+    <link rel="stylesheet" href="../../../css/portfolio.css">
+</head>
+
+<body>
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+    <header class="header">
+        <div class="inner">
+            <!-- 로고 -->
+            <h1 class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo/SM_LOGO 3.webp" alt="서담면옥">
+                </a>
+            </h1>
+
+            <!-- PC GNB -->
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="./brand.html">브랜드</a>
+                    </li>
+                    <li>
+                        <a href="./menu.html">메뉴</a>
+                    </li>
+                    <li>
+                        <a href="./location.html">매장</a>
+                    </li>
+                    <li>
+                        <a href="./store.html">스토어</a>
+                    </li>
+                    <li>
+                        <a href="./franchise.html">창업안내</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- 모바일 햄버거 버튼 -->
+            <button type="button" class="mobile-menu-btn" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <!-- =====================================
+             MOBILE MENU
+        ====================================== -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-top">
+                <!-- 로고 -->
+                <a href="../index.html" class="mobile-menu-logo">
+                    <img src="../images/logo/SM_LOGO 3.webp" alt="서담면옥">
+                </a>
+                <!-- 닫기 버튼 -->
+                <button type="button" class="mobile-menu-close" aria-label="메뉴 닫기">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- 모바일 GNB -->
+            <nav class="mobile-gnb">
+                <a href="./brand.html">브랜드</a>
+                <a href="./menu.html">메뉴</a>
+                <a href="./location.html">매장</a>
+                <a href="./store.html">스토어</a>
+                <a href="./franchise.html">창업안내</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+    <main>
+        <section class="location-hero">
+            <div class="inner">
+                <div class="location-hero-text">
+                    <span>Location</span>
+                    <h1>
+                        가까운 곳에서<br>
+                        서담면옥을 만나보세요.
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- =====================================
+             LOCATION CONTENT
+        ====================================== -->
+        <section class="location-area">
+            <div class="inner">
+                <!-- =================================
+                     TITLE
+                ================================== -->
+                <div class="location-title">
+                    <h2>매장을 찾아보세요</h2>
+                    <p>
+                        가까운 매장을 검색하고 매장 정보를 확인해보세요.
+                    </p>
+                </div>
+
+                <!-- =================================
+                     SEARCH
+                ================================== -->
+                <div class="location-search">
+                    <!-- 지역 선택 -->
+                    <div class="location-select">
+                        <select aria-label="지역 선택">
+                            <option value="">
+                                전체 지역
+                            </option>
+                            <option value="서울">
+                                서울
+                            </option>
+                            <option value="경기">
+                                경기
+                            </option>
+                            <option value="전남">
+                                전남
+                            </option>
+                        </select>
+                    </div>
+
+                    <!-- 매장 검색 -->
+                    <div class="location-keyword">
+                        <input type="text" placeholder="매장명을 입력해주세요." aria-label="매장명 검색">
+                    </div>
+
+                    <!-- 검색 버튼 -->
+                    <button type="button" class="location-search-btn">
+                        검색
+                    </button>
+                </div>
+
+                <!-- =================================
+                     STORE COUNT
+                ================================== -->
+                <div class="location-count">
+                    <strong>전체 매장</strong>
+                    <span>5개</span>
+                </div>
+
+                <!-- =================================
+                     STORE LIST
+                ================================== -->
+                <div class="store-list">
+                    <!-- =============================
+                         강남점
+                    ============================== -->
+                    <div class="store-item" data-region="서울">
+                        <div class="store-info">
+                            <h3>
+                                서담면옥 강남점
+                            </h3>
+                            <p>
+                                서울특별시 강남구 oo로 00
+                            </p>
+                            <p>
+                                02-0000-0000
+                            </p>
+                        </div>
+
+                        <a href="#" class="store-detail">
+                            매장 상세
+                            <span>→</span>
+                        </a>
+                    </div>
+
+                    <!-- =============================
+                         종로점
+                    ============================== -->
+                    <div class="store-item" data-region="서울">
+                        <div class="store-info">
+                            <h3>
+                                서담면옥 종로점
+                            </h3>
+                            <p>
+                                서울특별시 종로구 oo로 00
+                            </p>
+                            <p>
+                                02-0000-0000
+                            </p>
+                        </div>
+                        <a href="#" class="store-detail">
+                            매장 상세
+                            <span>→</span>
+                        </a>
+                    </div>
+
+                    <!-- =============================
+                         시흥은계점
+                    ============================== -->
+                    <div class="store-item" data-region="경기">
+                        <div class="store-info">
+                            <h3>
+                                서담면옥 시흥은계점
+                            </h3>
+                            <p>
+                                경기도 시흥시 oo로 00
+                            </p>
+                            <p>
+                                031-0000-0000
+                            </p>
+                        </div>
+                        <a href="#" class="store-detail">
+                            매장 상세
+                            <span>→</span>
+                        </a>
+                    </div>
+
+                    <!-- =============================
+                         일산점
+                    ============================== -->
+                    <div class="store-item" data-region="경기">
+                        <div class="store-info">
+                            <h3>
+                                서담면옥 일산점
+                            </h3>
+                            <p>
+                                경기도 고양시 일산동구 oo로
+                            </p>
+                            <p>
+                                031-0000-0000
+                            </p>
+                        </div>
+                        <a href="#" class="store-detail">
+                            매장 상세
+                            <span>→</span>
+                        </a>
+                    </div>
+
+                    <!-- =============================
+                         목포점
+                    ============================== -->
+                    <div class="store-item" data-region="전남">
+                        <div class="store-info">
+                            <h3>
+                                서담면옥 목포점
+                            </h3>
+                            <p>
+                                전라남도 목포시 oo로 00
+                            </p>
+                            <p>
+                                061-0000-0000
+                            </p>
+                        </div>
+                        <a href="#" class="store-detail">
+                            매장 상세
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="location-empty" hidden>
+                    검색 결과가 없습니다.
+                </div>
+
+                <!-- =================================
+                     PAGINATION
+                ================================== -->
+                <div class="pagination">
+                    <a href="#" class="active">
+                        1
+                    </a>
+                    <a href="#">
+                        2
+                    </a>
+                    <a href="#">
+                        3
+                    </a>
+                    <a href="#" class="next">
+                        〉
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+    <footer class="footer">
+        <div class="inner">
+            <!-- 로고 -->
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo/SM_LOGO 3.webp" alt="서담면옥">
+                </a>
+            </div>
+
+            <!-- 정보 -->
+            <div class="info">
+                <div class="info-top">
+                    <p>
+                        사업자등록번호 : 133-81-26143
+                    </p>
+                    <p>
+                        대표 : 김함흥
+                    </p>
+                </div>
+
+                <div class="info-bottom">
+                    <p>
+                        주소 : 서울특별시 마른내로 114
+                    </p>
+                </div>
+
+                <div class="info-link">
+                    <a href="#">
+                        이용약관
+                    </a>
+                    <a href="#">
+                        <strong>
+                            개인정보처리방침
+                        </strong>
+                    </a>
+                </div>
+
+                <div class="copyright">
+                    <span>
+                        &copy; 2026 SEODAM MYEONOK.
+                        ALL RIGHTS RESERVED.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+    <!-- 공통 모바일 메뉴 -->
+    <script src="../js/common.js"></script>
+    <!-- 매장 검색 / 지역 필터 -->
+    <script src="../js/location.js"></script>
+<a href="../../../index.html#work" class="portfolio-back">← 포트폴리오</a></body>
+
+</html>

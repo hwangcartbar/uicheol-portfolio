@@ -1,0 +1,346 @@
+@charset "utf-8";
+@import url(./common.css);
+
+/* 서비스 영역 */
+.service-area {
+    --service-blue: #0B50FD;
+    --service-light-blue: BFD8FD;
+    --service-pink: #FCDDE9;
+
+    width: 100%;
+    background: var(--service-pink);
+    color: #080808;
+    font-family: "Pretendard", sans-serif;
+}
+
+.service-area,
+.service-area * {
+    box-sizing: border-box;
+}
+
+.service-area [hidden] {
+    display: none !important;
+}
+
+.service-area>.inner {
+    width: calc(100% - 40px);
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 80px 0;
+
+    display: grid;
+    grid-template-columns: 460px minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.service-area a {
+    text-decoration: none;
+}
+
+/* 왼쪽 이미지 */
+.service-visual {
+    position: relative;
+    min-width: 0;
+}
+
+.service-character {
+    display: block;
+    width: 500px;
+    max-width: none;
+    height: auto;
+    margin-left: -40px;
+}
+
+/* 이미지에 포함된 제목의 접근성용 텍스트 */
+.service-visual-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* 오른쪽 안내 박스 */
+.service-box {
+    min-width: 0;
+    padding: 28px 38px 30px;
+    background: #fff;
+    border: 2px solid #272522;
+    border-radius: 30px;
+}
+
+/* 상위 탭 */
+.service-main-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.service-main-tabs a {
+    min-height: 66px;
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 40px;
+    background: var(--service-light-blue);
+    color: #272522;
+
+    font-family: "Gmarket Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.service-main-tabs a.is-active {
+    background: var(--service-blue);
+    color: #fff;
+}
+
+/* 하위 탭 */
+.service-sub-tabs {
+    display: flex;
+    min-height: 72px;
+    border-bottom: 2px solid #999;
+}
+
+.service-sub-tabs a {
+    min-width: 0;
+    padding: 22px 30px 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: -2px;
+    border-bottom: 4px solid transparent;
+
+    color: #999;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.service-sub-tabs a.is-active {
+    border-bottom-color: var(--service-blue);
+    color: var(--service-blue);
+}
+
+.service-sub-empty {
+    height: 72px;
+    border-bottom: 2px solid #999;
+}
+
+/* 설명과 절차 */
+.service-content {
+    padding: 54px 0 0;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 40px;
+}
+
+.service-description {
+    min-width: 0;
+}
+
+/* 분홍색 말풍선 */
+.service-speech {
+    position: relative;
+    min-height: 176px;
+    margin-bottom: 50px;
+    padding: 30px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #ffdfec, #fbd5e6);
+    border-radius: 40px;
+    filter: drop-shadow(3px 5px 3px rgb(0 0 0 / 16%));
+}
+
+.service-speech::after {
+    content: "";
+    position: absolute;
+    bottom: -27px;
+    left: 35%;
+    width: 56px;
+    height: 40px;
+
+    background: #fbd9e9;
+    clip-path: polygon(25% 0, 100% 0, 0 100%);
+}
+
+.service-speech p {
+    margin: 0;
+
+    font-family: "Gmarket Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.04em;
+    text-align: center;
+    word-break: keep-all;
+}
+
+/* 하늘색 제목 */
+.service-heading {
+    min-height: 70px;
+    margin: 0;
+    padding: 14px 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 40px;
+    background: linear-gradient(135deg, #dcf3ff, #d4edfb);
+
+    font-family: "Gmarket Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.03em;
+    text-align: center;
+    word-break: keep-all;
+}
+
+/* 설명 */
+.service-text {
+    margin-top: 34px;
+}
+
+.service-text p {
+    margin: 0 0 34px;
+
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: -0.025em;
+    word-break: keep-all;
+}
+
+/* 외부 서비스 이동 버튼 */
+.service-link {
+    width: fit-content;
+    max-width: 100%;
+    min-width: min(280px, 100%);
+    min-height: 80px;
+    margin: 0 auto;
+    padding: 18px 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50px;
+    background: var(--service-blue);
+    color: #fff;
+
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    word-break: keep-all;
+
+    transition: background-color 0.2s;
+}
+
+.service-link:hover {
+    background: #073bd7;
+}
+
+/* 절차 */
+.service-process {
+    min-width: 0;
+    padding-top: 14px;
+}
+
+.service-steps {
+    margin: 36px 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service-step {
+    position: relative;
+    min-height: 130px;
+    padding: 20px 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    border: 3px solid var(--service-blue);
+    border-radius: 24px;
+    background: #fff;
+}
+
+.service-step+.service-step {
+    margin-top: 54px;
+}
+
+.service-step+.service-step::before {
+    content: "↓";
+    position: absolute;
+    top: -51px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #8d929d;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.service-step:nth-child(2) {
+    border-color: transparent;
+    background: linear-gradient(135deg, #dcf3ff, #d4edfb);
+}
+
+.service-step-number {
+    width: 76px;
+    height: 76px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: var(--service-blue);
+    color: #fff;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.service-step-text {
+    min-width: 0;
+    flex: 1;
+
+    font-family: "Gmarket Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    word-break: keep-all;
+}
+
+/* 키보드 선택 표시 */
+.service-area a:focus-visible {
+    outline: 3px solid #080808;
+    outline-offset: 4px;
+}

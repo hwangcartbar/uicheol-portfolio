@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>service</title>
+    <link rel="stylesheet" href="../css/service.css">
+    <script src="../js/service.js" defer></script>
+    <!-- 포트폴리오 복귀 버튼 -->
+    <link rel="stylesheet" href="../../../css/portfolio.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <a href="../index.html">
+                    <div class="logo">
+                        <img src="../images/logo/logo-black.webp" alt="">
+                    </div>
+                </a>
+                <nav class="gnb" aria-label="주 메뉴">
+                    <ul class="gnb-list">
+                        <!-- 하위 메뉴 없음 -->
+                        <li class="gnb-item">
+                            <a href="./campaign.html">캠페인 안내</a>
+                        </li>
+
+                        <li class="gnb-item">
+                            <a href="./diagnostics.html">자가진단</a>
+                        </li>
+
+                        <!-- 피해사례·대응 -->
+                        <li class="gnb-item">
+                            <a href="./damage case.html">피해사례·대응</a>
+
+                            <div class="gnb-submenu">
+                                <p class="submenu-title">피해사례·대응</p>
+
+                                <ul class="submenu-list">
+                                    <li>
+                                        <a href="./damage case.html#privacy">개인정보 유출</a>
+                                    </li>
+                                    <li>
+                                        <a href="./damage case.html#phishing">피싱·스미싱</a>
+                                    </li>
+                                    <li>
+                                        <a href="./damage case.html#deepfake">생성형 AI·딥페이크</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- 권리·서비스 -->
+                        <li class="gnb-item">
+                            <a class="on" href="./service.html">권리·서비스</a>
+
+                            <div class="gnb-submenu">
+                                <div class="submenu-group">
+                                    <p class="submenu-title">개인정보 권리</p>
+
+                                    <ul class="submenu-list">
+                                        <li><a href="./service.html#rights">열람·정정·삭제 요구</a></li>
+                                        <li><a href="./service.html#identity">본인확인 내역 조회</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="submenu-group">
+                                    <p class="submenu-title">개인정보 관리 서비스</p>
+
+                                    <ul class="submenu-list">
+                                        <li><a href="./service.html#withdrawal">웹사이트 회원탈퇴</a></li>
+                                        <li><a href="./service.html#eraser">지우개 서비스</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="submenu-group">
+                                    <ul class="submenu-list">
+                                        <li><a href="./service.html#leak">털린 내 정보 찾기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- 안전가이드 -->
+                        <li class="gnb-item">
+                            <a href="./guide.html">안전가이드</a>
+
+                            <div class="gnb-submenu">
+                                <ul class="submenu-list">
+                                    <li><a href="#">교육자료 다운로드</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="service-area">
+            <div class="inner">
+                <!-- 제목과 캐릭터가 합쳐진 이미지 -->
+                <div class="service-visual">
+                    <h1 class="service-visual-title" id="service-title">
+                        열람·정정·삭제 요구
+                    </h1>
+
+                    <img src="../images/service_image/rights-character.webp" alt="" class="service-character"
+                        id="service-character">
+                </div>
+
+                <!-- 서비스 안내 박스 -->
+                <section class="service-box" aria-labelledby="service-title">
+                    <!-- 상위 메뉴 -->
+                    <nav class="service-main-tabs" aria-label="서비스 분류">
+                        <a href="#rights" data-group="privacy" class="is-active" aria-current="true">
+                            개인정보 관리
+                        </a>
+
+                        <a href="#withdrawal" data-group="management">
+                            개인정보 관리 서비스
+                        </a>
+
+                        <a href="#leak" data-group="leak">
+                            털린 내 정보 찾기
+                        </a>
+                    </nav>
+
+                    <!-- 개인정보 관리 하위 메뉴 -->
+                    <nav class="service-sub-tabs" data-sub-group="privacy" aria-label="개인정보 관리 메뉴">
+                        <a href="#rights" data-service="rights" class="is-active" aria-current="page">
+                            열람·정정·삭제 요구
+                        </a>
+
+                        <a href="#identity" data-service="identity">
+                            본인확인 내역 조회
+                        </a>
+                    </nav>
+
+                    <!-- 개인정보 관리 서비스 하위 메뉴 -->
+                    <nav class="service-sub-tabs" data-sub-group="management" aria-label="개인정보 관리 서비스 메뉴" hidden>
+                        <a href="#withdrawal" data-service="withdrawal">
+                            웹사이트 회원탈퇴
+                        </a>
+
+                        <a href="#eraser" data-service="eraser">
+                            지우개 서비스
+                        </a>
+                    </nav>
+
+                    <!-- 털린 내 정보 찾기는 하위 메뉴 없음 -->
+                    <div class="service-sub-empty" data-sub-group="leak" hidden></div>
+
+                    <div class="service-content">
+                        <!-- 서비스 설명 -->
+                        <div class="service-description">
+                            <div class="service-speech">
+                                <p id="service-message">
+                                    “내 개인정보,<br>
+                                    확인하고 바로잡을 수 있어요.”
+                                </p>
+                            </div>
+
+                            <h2 class="service-heading" id="service-heading">
+                                개인정보 열람 등 요구란?
+                            </h2>
+
+                            <div class="service-text" id="service-text">
+                                <p>
+                                    내 개인정보가 어떻게 이용되는지 확인하고,
+                                    잘못된 정보의 정정이나 삭제를 요청하는 권리예요.
+                                </p>
+
+                                <p>
+                                    개인정보를 보유한 기관이나 서비스의
+                                    안내에 따라 요청 방법을 확인해보세요.
+                                </p>
+                            </div>
+
+                            <a class="service-link" id="service-link" href="https://www.privacy.go.kr/" target="_blank"
+                                rel="noopener noreferrer" aria-label="권리 행사 안내보기 (새 창)">
+                                권리 행사 안내보기
+                            </a>
+                        </div>
+
+                        <!-- 서비스 이용 절차 -->
+                        <div class="service-process">
+                            <h2 class="service-heading" id="service-process-title">
+                                권리 행사 절차 알아보기
+                            </h2>
+
+                            <ol class="service-steps" id="service-steps">
+                                <li class="service-step">
+                                    <span class="service-step-number">01</span>
+                                    <span class="service-step-text">
+                                        요청 내용 확인
+                                    </span>
+                                </li>
+
+                                <li class="service-step">
+                                    <span class="service-step-number">02</span>
+                                    <span class="service-step-text">
+                                        해당 기관에 요청
+                                    </span>
+                                </li>
+
+                                <li class="service-step">
+                                    <span class="service-step-number">03</span>
+                                    <span class="service-step-text">
+                                        처리 결과 확인
+                                    </span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="inner">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <!-- 흰색 글자 로고의 실제 파일명으로 변경 -->
+                        <img src="../images/logo/logo-white.webp" alt="지켜봐요" class="footer-logo">
+                        <p>오늘도 안전한, 우리의 개인정보</p>
+                    </div>
+
+                    <nav class="footer-nav" aria-label="푸터 메뉴">
+                        <ul>
+                            <li><a href="./campaign.html">캠페인 안내</a></li>
+                            <li><a href="./diagnostics.html">자가진단</a></li>
+                            <li><a href="./damage case.html">피해사례·대응</a></li>
+                            <li><a href="./service.html">권리·서비스</a></li>
+                            <li><a href="./service.html">안전가이드</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-bottom">
+                    <ul class="footer-links">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+
+                    <p class="footer-copyright">
+                        © 2026 지켜봐요. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+<a href="../../../index.html#work" class="portfolio-back">← 포트폴리오</a></body>
+
+</html>

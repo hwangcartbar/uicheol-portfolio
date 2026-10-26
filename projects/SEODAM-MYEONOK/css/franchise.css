@@ -1,0 +1,1137 @@
+@charset "utf-8";
+@import url(../css/common.css);
+
+/* ========================================
+   FRANCHISE
+======================================== */
+
+
+/* ========================================
+   INTRO
+======================================== */
+
+.franchise-intro {
+  height: 810px;
+  background: url(../images/franchise/francise_intro_image.webp) no-repeat center / cover;
+}
+
+.franchise-intro .franchise-content {
+  position: relative;
+  top: 220px;
+  transform: translateY(0);
+  color: #fff;
+}
+
+.franchise-intro .franchise-content>span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 1.4px;
+}
+
+.franchise-intro .franchise-title {
+  margin-bottom: 24px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -2px;
+}
+
+.franchise-intro .franchise-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* ========================================
+   FRANCHISE PROCESS
+======================================== */
+
+.franchise-process {
+  padding: 80px 0;
+  background: #f6f3ed;
+}
+
+.franchise-process .franchise-eyebrow {
+  display: block;
+  margin-bottom: 11px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 1.4px;
+
+  color: #625d55;
+}
+
+.franchise-process .franchise-head h2 {
+  margin-bottom: 40px;
+
+  font-size: 32px;
+  line-height: 1.3;
+  letter-spacing: -1.5px;
+
+  color: #222;
+}
+
+
+/* 창업 절차 이미지 */
+
+.franchise-process .franchise-process-img {
+  width: 100%;
+  text-align: center;
+}
+
+.franchise-process .franchise-process-img img {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   FRANCHISE CONDITIONS
+======================================== */
+
+.franchise-conditions {
+  padding: 80px 0;
+  background: #ece7de;
+}
+
+.franchise-conditions .franchise-eyebrow {
+  display: block;
+  margin-bottom: 11px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 1.4px;
+
+  color: #625d55;
+}
+
+.franchise-conditions .franchise-head h2 {
+  margin-bottom: 50px;
+
+  font-size: 32px;
+  line-height: 1.3;
+  letter-spacing: -1.5px;
+
+  color: #222;
+}
+
+
+/* ========================================
+   TAB
+======================================== */
+
+.franchise-tab-list {
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.franchise-tab-list button {
+  width: 360px;
+  height: 56px;
+  border: 0;
+  border-bottom: 1px solid #d9d9d9;
+  background: transparent;
+  color: #625d55;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  cursor: pointer;
+}
+
+.franchise-tab-list button.active {
+  border-bottom: 3px solid #9b8974;
+  color: #222;
+}
+
+
+/* ========================================
+   TAB PANEL
+======================================== */
+
+.franchise-panels {
+  width: 100%;
+}
+
+.franchise-panel {
+  display: none;
+}
+
+.franchise-panel.active {
+  display: block;
+}
+
+
+/* ========================================
+   COST
+======================================== */
+
+/* 창업 비용 */
+.franchise-cost {
+  display: flex;
+  gap: 64px;
+}
+
+
+/* 왼쪽 */
+.franchise-cost-left {
+  width: calc(50% - 20px);
+  margin: auto 0;
+}
+
+
+/* 오른쪽 */
+.franchise-cost-right {
+  width: calc(50% - 20px);
+}
+
+.franchise-cost-right img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* 예상 창업 비용 */
+.franchise-cost-total {
+  margin-bottom: 24px;
+}
+
+.franchise-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #625d55;
+}
+
+.franchise-value {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+}
+
+.franchise-note {
+  display: block;
+
+  font-size: 11px;
+  color: #8a847c;
+}
+
+
+/* 비용 목록 */
+.franchise-cost-list ul {
+  border-top: 1px solid #d9d3ca;
+}
+
+.franchise-cost-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  border-bottom: 1px solid #d9d3ca;
+}
+
+.franchise-cost-text {
+  font-size: 16px;
+  color: #625d55;
+}
+
+.franchise-cost-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.franchise-cost-list .franchise-cost-note {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #625D55;
+  letter-spacing: -1%;
+}
+
+
+/* 오른쪽 매장 이미지 */
+.franchise-cost-img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.franchise-cost-img img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* 총 창업비용 */
+.franchise-cost-total {
+  flex: 1;
+}
+
+.franchise-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #625D55;
+}
+
+.franchise-value {
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -2px;
+  color: #222;
+}
+
+.franchise-note {
+  display: block;
+  font-size: 13px;
+  color: #625D55;
+  margin-bottom: 24px;
+}
+
+
+/* 비용 리스트 */
+.franchise-cost-list {
+  flex: 1;
+}
+
+.franchise-cost-list ul {
+  border-top: 1px solid #D8D1C5;
+}
+
+.franchise-cost-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 48px;
+  border-bottom: 1px solid #D8D1C5;
+}
+
+.franchise-cost-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #625d55;
+}
+
+.franchise-cost-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.franchise-cost-note {
+  margin-top: 16px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #8a847c;
+}
+
+
+/* ========================================
+   STORE CONDITION
+======================================== */
+
+.franchise-store {
+  width: 100%;
+}
+
+.franchise-store-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.franchise-store-item {
+  flex: 1;
+  padding: 40px;
+  background: #F6F3ED;
+  text-align: center;
+}
+
+.franchise-num {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9B8974;
+}
+
+.franchise-store-icon {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+.franchise-store-item .franchise-store-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #222;
+}
+
+.franchise-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -1%;
+  color: #625D55;
+}
+
+.franchise-store-item:nth-child(2) {
+  border-left: 1px solid #D8D1C5;
+  border-right: 1px solid #D8D1C5;
+}
+
+
+/* ========================================
+   SUPPORT
+======================================== */
+
+.franchise-support {
+  width: 100%;
+}
+
+.franchise-support-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.franchise-support-item {
+  min-width: 0;
+  background: #F6F3ED;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.franchise-support-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+.franchise-support-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: #222;
+}
+
+.franchise-cost-img {
+  margin-top: 60px;
+}
+
+.franchise-cost-img img {
+  display: block;
+  width: 100%;
+}
+
+
+/* ========================================
+   INQUIRY
+======================================== */
+
+.franchise-inquiry {
+  background: linear-gradient(90deg,
+      #FAF9F8 0%,
+      #FAF9F8 25%,
+      #FAF9F8 45%,
+      rgba(255, 255, 255, 0) 60%),
+    url(../images/franchise/franchise_conditions.webp) no-repeat center/cover;
+  padding: 40px;
+}
+
+.franchise-inquiry-info {
+  flex: 1;
+  margin-bottom: 24px;
+}
+
+
+.franchise-inquiry-title {
+  margin-bottom: 12px;
+}
+
+.franchise-inquiry-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #625D55;
+}
+
+
+/* 문의 폼 */
+.franchise-form {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 664px;
+  gap: 26px;
+}
+
+
+/* 입력 그룹 */
+.franchise-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.franchise-form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+}
+
+.franchise-form-group input {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid #D8D1C5;
+  border-radius: 4px;
+  background: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+}
+
+.franchise-form-group input::placeholder {
+  color: #c8c0b7;
+}
+
+.franchise-form-group input:focus {
+  border-color: #9b8974;
+}
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.franchise-btn {
+  grid-column: 1 / -1;
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin-top: 24px;
+  border-radius: 4px;
+  background: #9B8974;
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.franchise-btn:hover {
+  background-color: #806F5D;
+}
+
+
+/* ==============================================================
+mobile
+================================================================== */
+
+/* =========================================
+   COMMON - MOBILE 430px
+========================================= */
+
+@media screen and (max-width: 430px) {
+
+  /* -------------------------------------
+       BODY
+    ------------------------------------- */
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* -------------------------------------
+       공통 INNER
+
+       430px
+       좌우 padding 20px
+       실제 콘텐츠 영역 390px
+    ------------------------------------- */
+
+  .inner {
+    width: 100%;
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  /* -------------------------------------
+       TYPOGRAPHY
+    ------------------------------------- */
+
+  h1 {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.56px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.48px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.4px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+  }
+
+  /* -------------------------------------
+       MAIN
+    ------------------------------------- */
+
+  main {
+    width: 100%;
+    height: auto;
+  }
+
+  /* -------------------------------------
+       INTRO
+    ------------------------------------- */
+
+  .intro {
+    width: 100%;
+    height: 260px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background:
+      url(../images/brand_img/Brand-Intro-Img.webp) no-repeat center / cover;
+  }
+
+  .intro .inner {
+    height: 100%;
+    position: relative;
+  }
+
+  /* -------------------------------------
+       INTRO TEXT
+    ------------------------------------- */
+
+  .intro .content-text {
+    width: calc(100% - 40px);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .intro .content-text span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+
+  .intro .content-text .title {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.56px;
+  }
+}
+
+/* 공통 */
+
+@media screen and (max-width: 430px) {
+
+  /* =========================================
+       BODY
+    ========================================= */
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* =========================================
+       HERO
+    ========================================= */
+
+  .franchise-intro {
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .franchise-intro .inner {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .franchise-intro .franchise-content {
+    position: absolute;
+    text-align: center;
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .franchise-intro .franchise-content>span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 10%;
+    font-weight: 500;
+  }
+
+  .franchise-intro .franchise-title {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: -2px;
+  }
+
+  .franchise-intro .franchise-desc {
+    display: none;
+  }
+
+
+  /* =========================================
+       창업조건
+    ========================================= */
+
+  .franchise-conditions {
+    width: 100%;
+    padding: 0;
+  }
+
+  .franchise-conditions>.inner {
+    width: 100%;
+    padding: 0;
+  }
+
+
+  /* =========================================
+       창업조건 제목
+    ========================================= */
+
+  .franchise-conditions>.inner>.franchise-head {
+    display: none;
+  }
+
+
+  /* =========================================
+       탭
+    ========================================= */
+
+  .franchise-tabs {
+    width: 100%;
+    padding: 0;
+  }
+
+  .franchise-tab-list {
+    display: flex;
+    width: 100%;
+    height: 31px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #D9D9D9;
+  }
+
+  .franchise-tab-list button {
+    flex: 1;
+    width: 20%;
+    min-width: 0;
+    height: 31px;
+    padding: 0;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: #625d55;
+    font-family: inherit;
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+  }
+
+  .franchise-tab-list button.active {
+    border-bottom: 2px solid #9b8974;
+
+    color: #222;
+    font-weight: 600;
+  }
+
+
+  /* =========================================
+       PANEL
+    ========================================= */
+
+  .franchise-panels {
+    width: 100%;
+  }
+
+  .franchise-panel {
+    width: 100%;
+  }
+
+
+  /* =========================================
+       창업절차
+    ========================================= */
+
+  .franchise-process-panel {
+    width: 100%;
+  }
+
+  .franchise-process-panel .franchise-process {
+    display: block;
+
+    width: 100%;
+
+    padding: 25px 15px;
+
+    box-sizing: border-box;
+  }
+
+  .franchise-process-panel .franchise-process .inner {
+    width: 100%;
+    padding: 0;
+  }
+
+  .franchise-process-panel .franchise-head {
+    margin-bottom: 15px;
+  }
+
+  .franchise-process-panel .franchise-eyebrow {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 7px;
+    line-height: 1.4;
+
+    letter-spacing: 0.7px;
+  }
+
+  .franchise-process-panel .franchise-head h2 {
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 1.4;
+
+    letter-spacing: -0.7px;
+  }
+
+  .franchise-process-panel .franchise-process-img {
+    width: 100%;
+  }
+
+  .franchise-process-panel .franchise-process-img img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+  }
+
+
+  /* =========================================
+       창업비용
+    ========================================= */
+
+  .franchise-cost {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    gap: 0;
+  }
+
+  .franchise-cost-left {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  /* 예상 창업 비용 */
+  .franchise-cost-total {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d8d1c5;
+    margin-bottom: 0;
+  }
+
+  .franchise-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 8px;
+    line-height: 1.4;
+    color: #625d55;
+  }
+
+  .franchise-value {
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.8px;
+    color: #222;
+  }
+
+  .franchise-note {
+    display: block;
+    margin: 0;
+    font-size: 6px;
+    line-height: 1.5;
+    color: #625d55;
+  }
+
+
+  /* =========================================
+       비용 리스트
+    ========================================= */
+
+  .franchise-cost-list {
+    width: 100%;
+  }
+
+  .franchise-cost-list ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 0;
+  }
+
+  .franchise-cost-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 32px;
+    border-bottom: 1px solid #d8d1c5;
+  }
+
+  .franchise-cost-text {
+    font-size: 7px;
+    color: #625d55;
+  }
+
+  .franchise-cost-price {
+    font-size: 8px;
+    color: #222;
+  }
+
+  .franchise-cost-left .franchise-cost-note {
+    margin-top: 7px;
+    font-size: 6px;
+    line-height: 1.5;
+    color: #8a847c;
+  }
+
+
+  /* =========================================
+       창업비용 이미지
+    ========================================= */
+
+  .franchise-cost-right {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+
+  .franchise-cost-right img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+  /* =========================================
+       매장조건
+    ========================================= */
+
+  .franchise-store {
+    width: 100%;
+  }
+
+  .franchise-store-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .franchise-store-item {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid #d8d1c5;
+  }
+
+  .franchise-store-item:nth-child(2) {
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .franchise-num {
+    display: none;
+  }
+
+  .franchise-store-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+
+  .franchise-store-item .franchise-store-title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #222;
+  }
+
+  .franchise-store-item .franchise-desc {
+    font-size: 15px;
+    line-height: 24px;
+
+    color: #625d55;
+  }
+
+
+  /* =========================================
+       본사지원
+    ========================================= */
+
+  .franchise-support-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .franchise-support-item {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d8d1c5;
+  }
+
+  .franchise-support-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+  }
+
+  .franchise-support-title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #222;
+  }
+
+  .franchise-support-item .franchise-desc {
+    font-size: 15px;
+    line-height: 24px;
+    color: #625d55;
+  }
+
+
+  /* =========================================
+       가맹문의
+    ========================================= */
+
+  .franchise-inquiry {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    background: #F6F3ED;
+  }
+
+  .franchise-inquiry-info {
+    margin-bottom: 15px;
+  }
+
+  .franchise-inquiry-title {
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .franchise-inquiry-desc {
+    font-size: 7px;
+    line-height: 1.6;
+  }
+
+  .franchise-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .franchise-form-group {
+    gap: 4px;
+  }
+
+  .franchise-form-group label {
+    font-size: 7px;
+  }
+
+  .franchise-form-group input {
+    width: 100%;
+    height: 30px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    font-size: 7px;
+  }
+
+  .franchise-btn {
+    width: 100%;
+    height: 30px;
+    margin-top: 8px;
+    font-size: 8px;
+  }
+
+}

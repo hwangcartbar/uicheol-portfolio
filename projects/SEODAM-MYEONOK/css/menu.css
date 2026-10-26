@@ -1,0 +1,757 @@
+@charset "utf-8";
+
+
+.intro {
+    width: 100%;
+    height: 730px;
+    padding: 180px 0 60px;
+    margin: 0 auto;
+    background: url(../img/mb_menu.webp) no-repeat center/cover;
+}
+
+/* ========================================
+   MENU PAGE
+======================================== */
+
+.menu-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+.inner {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   SECTION
+======================================== */
+
+.menu-section {
+    width: 100%;
+    padding: 80px 0 90px;
+    background-color: #fff;
+
+    opacity: 0;
+    transform: translateY(60px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+
+p {
+    line-height: 1.5;
+}
+
+
+/* 베이지 배경 섹션 */
+.menu-section--beige {
+    background-color: #f7f4ee;
+}
+
+
+/* 스크롤 시 등장 */
+.menu-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ========================================
+   SECTION TITLE
+======================================== */
+
+.menu-section-title {
+    margin-bottom: 56px;
+}
+
+
+/* ========================================
+   MENU GRID
+======================================== */
+
+.menu-grid {
+    display: grid;
+    width: 100%;
+    align-items: start;
+}
+
+
+/* 시그니처 메뉴 4개 */
+.menu-grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+}
+
+
+/* 따뜻한 메뉴 / 사이드 메뉴 3개 */
+.menu-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 120px;
+}
+
+
+/* 안주류 2개 */
+.menu-grid--2 {
+    width: 1000px;
+    margin: 0 auto;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 180px;
+}
+
+
+/* ========================================
+   MENU CARD
+======================================== */
+
+.menu-card {
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* ========================================
+   MENU IMAGE
+======================================== */
+
+.menu-img {
+    width: 100%;
+    height: 260px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 28px;
+}
+
+
+.menu-img img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* ========================================
+   메뉴별 이미지 최대 크기
+======================================== */
+
+/* 냉면 */
+.menu-grid--4 .menu-img img {
+    max-width: 300px;
+}
+
+
+/* 따뜻한 메뉴 / 사이드 메뉴 */
+.menu-grid--3 .menu-img img {
+    max-width: 350px;
+}
+
+
+/* 안주류 */
+.menu-grid--2 .menu-img {
+    height: 280px;
+}
+
+.menu-grid--2 .menu-img img {
+    max-width: 390px;
+}
+
+
+/* ========================================
+   MENU TEXT
+======================================== */
+
+.menu-text {
+    text-align: center;
+}
+
+.menu-tit {
+    font-family: "Pretendard Variable";
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -1%;
+}
+
+
+/* ========================================
+   HOVER
+======================================== */
+
+.menu-card:hover .menu-img img {
+    transform: translateY(-6px);
+}
+
+
+/* ========================================
+   MENU MODAL
+======================================== */
+
+.menu-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    z-index: 9999;
+}
+
+
+/* JS에서 show 클래스 붙으면 표시 */
+.menu-modal.show {
+    display: flex;
+}
+
+
+/* ========================================
+   MODAL CONTENT
+======================================== */
+
+.menu-modal .modal-content {
+    position: relative;
+
+    width: 900px;
+    height: 560px;
+
+    padding: 45px 48px 45px 40px;
+
+    background: #fff;
+    border-radius: 42px;
+
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 28px;
+}
+
+
+/* ========================================
+   CLOSE BUTTON
+======================================== */
+
+.menu-modal .modal-close {
+    position: absolute;
+    top: 42px;
+    right: 48px;
+
+    width: 28px;
+    height: 28px;
+
+    padding: 0;
+
+    background: none;
+
+    font-size: 44px;
+    font-weight: 200;
+    line-height: 28px;
+
+    color: #222;
+
+    z-index: 10;
+
+}
+
+
+/* ========================================
+   MODAL LEFT
+======================================== */
+
+.menu-modal .modal-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu-modal .modal-main-img {
+    width: 100%;
+    max-width: 410px;
+    max-height: 400px;
+
+    object-fit: contain;
+}
+
+
+/* ========================================
+   MODAL RIGHT
+======================================== */
+
+.menu-modal .modal-right {
+    padding-top: 5px;
+}
+
+
+/* [ MENU ] */
+.menu-modal .modal-category {
+    margin-bottom: 12px;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* 메뉴 이름 */
+.menu-modal .modal-title {
+    margin-bottom: 16px;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    line-height: 1.3;
+    letter-spacing: -1.5px;
+}
+
+
+/* 메뉴 설명 */
+.menu-modal .modal-desc {
+    min-height: 58px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.7;
+    letter-spacing: -0.4px;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* 구분선 */
+.menu-modal .modal-line {
+    width: 100%;
+    height: 1px;
+
+    margin: 22px 0 30px;
+
+    background: #ddd;
+}
+
+
+/* ========================================
+   INGREDIENT
+======================================== */
+
+.menu-modal .ingredient-title {
+    margin-bottom: 18px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* 재료 목록 */
+.menu-modal .ingredients {
+    display: grid;
+
+    grid-template-columns: repeat(4, 72px);
+
+    gap: 20px 22px;
+}
+
+
+/* 재료 하나 */
+.menu-modal .ingredient {
+    text-align: center;
+}
+
+
+/* 재료 이미지 원 */
+.menu-modal .ingredient-img {
+    width: 72px;
+    height: 72px;
+
+    margin-bottom: 9px;
+
+    border-radius: 50%;
+
+    background: #f5f4f1;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 재료 이미지 */
+.menu-modal .ingredient-img img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* 재료 이름 */
+.menu-modal .ingredient p {
+    white-space: nowrap;
+}
+
+
+
+
+
+/* ========================================
+   MOBILE - 430px
+======================================== */
+
+@media screen and (max-width: 430px) {
+
+    /* ========================================
+       PAGE
+    ======================================== */
+
+    .menu-page {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .intro {
+        width: 100%;
+        height: 260px;
+
+        padding: 0;
+        margin: 0;
+
+        position: relative;
+
+        background:
+            url(../img/mb_menu.webp) no-repeat center / cover;
+    }
+
+    /* ========================================
+       INNER
+    ======================================== */
+
+    .inner {
+        width: 390px;
+        max-width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+
+
+    /* ========================================
+       SECTION
+    ======================================== */
+
+    .menu-section {
+        padding: 48px 0 56px;
+
+        transform: translateY(30px);
+    }
+
+
+    /* 베이지 배경 */
+    .menu-section--beige {
+        background-color: #f7f4ee;
+    }
+
+
+    /* ========================================
+       SECTION TITLE
+    ======================================== */
+
+    .menu-section-title {
+        margin-bottom: 36px;
+
+        text-align: center;
+
+        font-size: 24px;
+        font-weight: 700;
+
+        line-height: 1.4;
+    }
+
+
+    /* ========================================
+       MENU GRID
+    ======================================== */
+
+    .menu-grid {
+        display: grid;
+
+        width: 100%;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        column-gap: 20px;
+        row-gap: 42px;
+
+        align-items: start;
+    }
+
+
+    /* 시그니처 4개 */
+    .menu-grid--4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 42px 20px;
+    }
+
+
+    /* 따뜻한 메뉴 / 사이드 */
+    .menu-grid--3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 42px 20px;
+    }
+
+
+    /* 안주류 */
+    .menu-grid--2 {
+        width: 100%;
+        margin: 0;
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 42px 20px;
+    }
+
+
+    /* ========================================
+       MENU CARD
+    ======================================== */
+
+    .menu-card {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* ========================================
+       MENU IMAGE
+    ======================================== */
+
+    .menu-img {
+        width: 100%;
+        height: 150px;
+
+        margin-bottom: 16px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .menu-img img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+    }
+
+
+    /* 데스크톱 max-width 무효화 */
+    .menu-grid--4 .menu-img img,
+    .menu-grid--3 .menu-img img,
+    .menu-grid--2 .menu-img img {
+        max-width: 100%;
+    }
+
+
+    /* 안주류 이미지 높이 */
+    .menu-grid--2 .menu-img {
+        height: 160px;
+    }
+
+
+    /* ========================================
+       MENU TEXT
+    ======================================== */
+
+    .menu-text {
+        text-align: center;
+    }
+
+
+    .menu-text h3 {
+        margin-bottom: 8px;
+
+        font-size: 16px;
+        font-weight: 700;
+
+        line-height: 1.4;
+    }
+
+
+    .menu-text p {
+        font-size: 12px;
+        font-weight: 400;
+
+        line-height: 1.6;
+
+        color: #777;
+    }
+
+
+    /* PC에서 넣은 br 그대로 사용 */
+    .menu-text p br {
+        display: none;
+    }
+
+
+    /* ========================================
+       HOVER
+    ======================================== */
+
+    .menu-card:hover .menu-img img {
+        transform: none;
+    }
+
+
+    /* ========================================
+       MODAL
+    ======================================== */
+
+    .menu-modal {
+        padding: 20px;
+
+        box-sizing: border-box;
+    }
+
+
+    .menu-modal .modal-content {
+        width: 390px;
+        max-width: 100%;
+
+        height: auto;
+        max-height: 85vh;
+
+        padding: 48px 24px 30px;
+
+        border-radius: 24px;
+
+        display: block;
+
+        overflow-y: auto;
+    }
+
+
+    /* ========================================
+       MODAL CLOSE
+    ======================================== */
+
+    .menu-modal .modal-close {
+        top: 18px;
+        right: 20px;
+
+        width: 28px;
+        height: 28px;
+
+        font-size: 36px;
+        line-height: 28px;
+    }
+
+
+    /* ========================================
+       MODAL LEFT
+    ======================================== */
+
+    .menu-modal .modal-left {
+        width: 100%;
+        height: 200px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .menu-modal .modal-main-img {
+        width: 100%;
+        height: 100%;
+
+        max-width: 260px;
+        max-height: 200px;
+
+        object-fit: contain;
+    }
+
+
+    /* ========================================
+       MODAL RIGHT
+    ======================================== */
+
+    .menu-modal .modal-right {
+        padding-top: 0;
+    }
+
+
+    .menu-modal .modal-category {
+        margin-bottom: 8px;
+
+        font-size: 12px;
+    }
+
+
+    .menu-modal .modal-title {
+        margin-bottom: 12px;
+
+        font-size: 26px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .menu-modal .modal-desc {
+        min-height: auto;
+
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    .menu-modal .modal-line {
+        margin: 20px 0 24px;
+    }
+
+
+    /* ========================================
+       INGREDIENT
+    ======================================== */
+
+    .menu-modal .ingredient-title {
+        margin-bottom: 16px;
+
+        font-size: 16px;
+    }
+
+
+    .menu-modal .ingredients {
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 18px 10px;
+    }
+
+
+    .menu-modal .ingredient-img {
+        width: 60px;
+        height: 60px;
+
+        margin: 0 auto 7px;
+    }
+
+
+    .menu-modal .ingredient p {
+        font-size: 11px;
+    }
+
+}

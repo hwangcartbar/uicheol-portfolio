@@ -1,0 +1,15 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poiret+One&display=swap');
+
+/* 기본 본문 및 메뉴: 고딕 계열 (Noto Sans KR) */
+body, button, input {
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400; /* 기본 두께 */
+}
+
+/* 한옥 느낌을 내는 제목이나 강조 문구: 명조 계열 (Noto Serif KR) */
+h1, h2, h3, .traditional-title {
+  font-family: 'Noto Serif KR', Georgia, serif;
+  font-weight: 500; /* 혹은 700 (굵게) */
+}

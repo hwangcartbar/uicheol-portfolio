@@ -1,0 +1,348 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(reset.css);
+
+header {
+    background: #fafcff;
+    position: relative;
+    z-index: 100;
+    border-bottom: 1px solid #cecece;
+    margin-bottom: 50px;
+}
+
+.header-inner {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-inner h1 {
+    color: #2563EB;
+}
+
+.header-inner .depth1 {
+    display: flex;
+    gap: 50px;
+
+    position: relative;
+}
+
+.header-inner .depth1 a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.header-inner .depth1 li .depth2 {
+    width: 1920px;
+    gap: 50px;
+    background: #F8FAFC;
+
+    display: none;
+    justify-content: center;
+    gap: 50px;
+
+    position: absolute;
+    left: -750px;
+}
+
+.header-inner .depth1 li:hover .depth2 {
+    display: flex;
+}
+
+.header-inner .depth1 li:hover>a {
+    color: #2563EB;
+}
+
+.header-inner .depth1 li .depth2 .box-area {
+    padding: 60px;
+}
+
+.header-inner .util {
+    background: #2563EB;
+    padding: 10PX 25PX;
+    border-radius: 20PX;
+    border: 1PX solid #EDEDED;
+    color: #fff;
+
+    transition: 0.4s;
+}
+
+.header-inner .util:hover {
+    background: #EDEDED;
+    border: 1PX solid #2563EB;
+    color: #000;
+}
+
+.depth2 .box-area .box01 {
+    display: flex;
+    gap: 50px;
+}
+
+.depth2 .box-area .box02 {
+    display: flex;
+    gap: 50px;
+}
+
+.depth2 .box-area .box li a ul {
+    width: 300px;
+}
+
+.depth2 .box-area span {
+    display: inline-block;
+    color: #2563EB;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.box-title {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.header-inner .depth1 li .depth3 {
+    width: 1920px;
+    padding: 70px;
+    background: #F8FAFC;
+
+    display: none;
+    justify-content: center;
+    gap: 170px;
+
+    position: absolute;
+    left: -750px;
+    z-index: 50;
+}
+
+.header-inner .depth1 li:hover .depth3 {
+    display: flex;
+}
+
+.depth3 li {
+    width: 500px;
+}
+
+.depth3 .box-title {
+    color: #2563EB;
+}
+
+.box li {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.box .box-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.depth3 li ul li {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.depth3 li ul .box-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-area {
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.swiper-wrapper {
+    padding: 30px;
+}
+
+.swiper {
+    margin-bottom: 50px;
+}
+
+.swiper-wrapper .swiper-slide {
+    width: 1200px;
+    height: 650px;
+    border-radius: 30px;
+    overflow: hidden;
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.main-area .main-Swiper .swiper-wrapper .swiper-slide .titel {
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    transition: 0.5s;
+}
+
+.main-area .main-Swiper .swiper-wrapper .swiper-slide .titel:hover {
+    top: 88%;
+}
+
+.swiper-wrapper .swiper-slide .titel>a {
+    display: inline-block;
+    opacity: 0%;
+    border: 2px solid #60A5FA;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.swiper-wrapper .swiper-slide .titel:hover>a {
+    opacity: 100%;
+}
+
+.swiper-wrapper .swiper-slide .titel>a:hover {
+    background: #60A5FA;
+    color: #fff;
+}
+
+.main-area .titel h1 {
+    color: #F97316;
+    margin-bottom: 10px;
+}
+
+.main-area .titel h2 {
+    margin-bottom: 10px;
+}
+
+.service-area {
+    padding: 100px;
+}
+
+.sevice {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.service-area h2 {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: #000
+}
+
+.service-area .icon-area .icon {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-area .icon-area .icon .box .img {
+    background: #60A5FA;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.service-area .icon-area .icon .box img {
+    width: 90px;
+}
+
+.service-area .icon-area .icon .box {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000
+}
+
+.service-area .icon-area .icon .box:hover {
+    font-weight: 600;
+}
+
+.course-area {
+    width: 1920px;
+    margin: 0 auto;
+    background: url(../img/course-BG.webp) no-repeat center/cover;
+}
+
+.course-area .course {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.course-area .course h2 {
+    margin-bottom: 30px;
+    color: #fbfdff;
+}
+
+.course-area .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 10px;
+    margin: 20px 0 50px;
+}
+
+.course-area .grid .box {
+    width: 100%;
+    height: 93%;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    position: relative;
+}
+
+.course-area .grid .box > img {
+    display: block;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.course-area .grid .box:hover img {
+    transform: scale(1.1);
+}
+
+.course-area .grid .box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(255, 255, 255, 0.7),
+            rgba(0, 38, 255, 0.7));
+
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.course-area .grid .box:hover::before {
+    opacity: 1;
+}
+
+.course-area .grid .box p {
+    display: none;
+}
+
+.course-area .grid .box:hover p {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    z-index: 3;
+}

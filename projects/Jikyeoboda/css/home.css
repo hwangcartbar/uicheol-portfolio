@@ -1,0 +1,897 @@
+@charset "utf-8";
+@import url(./common.css);
+
+/* hear 영역 */
+.hero-area {
+    background: url(../images/home_Image/hero-bg.webp) no-repeat center/cover;
+    width: 100%;
+    height: 784px;
+}
+
+.hero-area .inner {
+    position: relative;
+    height: 100%;
+}
+
+.hero-area .inner img {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-46%, -80%);
+}
+
+.search-area {
+    width: 800px;
+    max-width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-47%, 80%);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 84px;
+    padding: 0 24px;
+    background: #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 22px;
+    opacity: 30%;
+}
+
+.search-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.search-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.search-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.search-tags button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ============ hero ============= */
+
+/* 개인정보 안내 섹션 */
+.privacy-intro {
+    background: #fff;
+    color: #454545;
+    padding: 64px 0 80px;
+}
+
+.privacy-intro,
+.privacy-intro * {
+    box-sizing: border-box;
+}
+
+.privacy-intro>.inner {
+    width: calc(100% - 40px);
+    max-width: 1720px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+/* 왼쪽 제목 */
+.privacy-intro-title {
+    margin: 0;
+    font-family: "Gmarket Sans", sans-serif;
+    font-size: 108px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.04em;
+}
+
+.privacy-intro-title span {
+    display: block;
+    white-space: nowrap;
+}
+
+.privacy-intro-title span:last-child {
+    color: #0B50FD;
+}
+
+/* 오른쪽 내용 */
+.privacy-intro-content {
+    min-width: 0;
+    padding-top: 12px;
+    font-family: "Pretendard", sans-serif;
+}
+
+.privacy-intro-description {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+/* 하단 3개 문구 */
+/* 하단 강조 문구 3개 */
+.privacy-intro-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+
+    margin: 40px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.privacy-intro-list li {
+    min-width: 0;
+}
+
+/* 90% / 3개 중 1개 / 매일 */
+.privacy-intro-value {
+    display: block;
+    margin-bottom: 16px;
+
+    /* font-family: "Gmarket Sans", sans-serif; */
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+
+/* 강조 문구 아래 설명 */
+.privacy-intro-list li p {
+    margin: 0;
+
+    color: #626262;
+    font-family: "Pretendard", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    word-break: keep-all;
+    overflow: 80%;
+}
+
+/* ============ privacy-intro ============= */
+
+/* 피해 사례 섹션 */
+.damage-area {
+    background: #0B50FD;
+    overflow: hidden;
+}
+
+.damage-area,
+.damage-area * {
+    box-sizing: border-box;
+}
+
+.damage-area>.inner {
+    position: relative;
+    width: calc(100% - 40px);
+    max-width: 1720px;
+    min-height: 738px;
+    margin: 0 auto;
+    padding: 100px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* 왼쪽 내용 */
+.damage-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* 공통 h2 폰트 스타일 유지 */
+.damage-title {
+    margin: 0;
+    color: #fff;
+}
+
+.damage-description {
+    margin: 32px 0 0;
+    color: #fff;
+    font-family: "Pretendard", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+/* 주요 사례 보기 */
+.damage-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 250px;
+    height: 72px;
+    margin-top: 64px;
+    border-radius: 40px;
+    background: #fff;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.damage-link:hover {
+    background-color: #d8fb63;
+}
+
+/* 중앙 캐릭터 */
+.damage-character {
+    position: absolute;
+    z-index: 1;
+    left: 490px;
+    bottom: -40px;
+    width: 590px;
+    height: auto;
+    display: block;
+    pointer-events: none;
+}
+
+/* 오른쪽 사례 목록 */
+.damage-list {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    flex: 0 0 596px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* 사례 카드 */
+.damage-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    width: 100%;
+    min-height: 130px;
+    padding: 24px 36px;
+    border-radius: 32px;
+    background: #fff;
+
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.damage-card:hover {
+    background: #d8fb63;
+}
+
+/* 번호 원 */
+.damage-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 0 0 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #070707;
+
+    color: #fff;
+    font-family: "Pretendard", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+/* 카드 문구 */
+.damage-card-text {
+    flex: 1;
+    margin: 0;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    word-break: keep-all;
+}
+
+/* 플러스 아이콘 */
+.damage-plus {
+    position: relative;
+    flex: 0 0 24px;
+    height: 24px;
+}
+
+.damage-plus::before,
+.damage-plus::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #070707;
+    transform: translate(-50%, -50%);
+}
+
+.damage-plus::before {
+    width: 22px;
+    height: 6px;
+}
+
+.damage-plus::after {
+    width: 6px;
+    height: 22px;
+}
+
+/* 키보드 포커스 */
+.damage-link:focus-visible,
+.damage-card:focus-visible {
+    outline: 3px solid #070707;
+    outline-offset: 4px;
+}
+
+/* ============ damage-area ============= */
+
+/* 개인정보 보호 습관 */
+.check-area {
+    background: #fff;
+    color: #222;
+}
+
+.check-area,
+.check-area * {
+    box-sizing: border-box;
+}
+
+.check-area>.inner {
+    position: relative;
+    width: calc(100% - 40px);
+    max-width: 1720px;
+    min-height: 780px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+/* 왼쪽 내용 */
+.check-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* 공통 h2 스타일 사용 */
+.check-title {
+    margin: 0;
+}
+
+.check-description {
+    margin: 32px 0 0;
+    color: #454545;
+    font-family: "Pretendard", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+/* 자가진단 시작 버튼 */
+.check-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: 250px;
+    height: 72px;
+    margin-top: 64px;
+    border-radius: 40px;
+    background: #222;
+
+    color: #fff;
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.check-link:hover {
+    background: #d8fb63;
+    color: #222;
+}
+
+/* 오른쪽 미리보기 */
+.check-preview {
+    position: absolute;
+    right: -70px;
+    bottom: 100px;
+    width: 880px;
+}
+
+/* 카드 뒤 캐릭터 */
+.check-character {
+    position: absolute;
+    z-index: 0;
+    right: 32px;
+    bottom: calc(100% - 20px);
+
+    display: block;
+    width: 520px;
+    height: auto;
+    pointer-events: none;
+}
+
+/* 질문 카드 */
+.check-card {
+    position: relative;
+    z-index: 1;
+
+    padding: 54px 78px 46px;
+    border: 2px solid #222;
+    border-radius: 40px;
+    background: #fff;
+}
+
+/* 공통 h3 스타일 사용 */
+.check-question {
+    margin: 0;
+}
+
+/* YES / NO 버튼 */
+.check-answers {
+    display: flex;
+    gap: 18px;
+    margin-top: 36px;
+}
+
+.check-answer {
+    flex: 1;
+    height: 68px;
+    padding: 0 20px;
+    border: 2px solid #555;
+    border-radius: 40px;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s,
+        border-color 0.2s,
+        color 0.2s;
+}
+
+.check-yes {
+    background: #fff;
+    color: #222;
+}
+
+.check-no {
+    border-color: #222;
+    background: #222;
+    color: #fff;
+}
+
+.check-answer:hover {
+    border-color: #222;
+    background: #d8fb63;
+    color: #222;
+}
+
+.check-link:focus-visible,
+.check-answer:focus-visible {
+    outline: 3px solid #0B50FD;
+    outline-offset: 4px;
+}
+
+/* ============ check-area ============= */
+
+/* 개인정보 유출 대응 */
+.response-area {
+    background: #080808;
+    color: #fff;
+}
+
+.response-area,
+.response-area * {
+    box-sizing: border-box;
+}
+
+.response-area>.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+    width: calc(100% - 40px);
+    max-width: 1720px;
+    min-height: 602px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+/* 왼쪽 내용 */
+.response-content {
+    flex: 0 0 540px;
+}
+
+/* 공통 h2 스타일 유지 */
+.response-title {
+    margin: 0;
+    color: #fff;
+}
+
+.response-description {
+    margin: 32px 0 0;
+    font-family: "Pretendard", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+/* 대응 방법 보기 */
+.response-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: 250px;
+    height: 72px;
+    margin-top: 64px;
+    border-radius: 40px;
+    background: #fff;
+
+    color: #222;
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: background-color 0.2s;
+}
+
+.response-link:hover {
+    background: #d8fb63;
+}
+
+/* 오른쪽 카드 목록 */
+.response-list {
+    display: flex;
+    align-items: center;
+
+    flex: 0 0 1120px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.response-item {
+    position: relative;
+    flex: 0 0 370px;
+}
+
+.response-item+.response-item {
+    margin-left: -10px;
+}
+
+/* 카드 */
+.response-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 370px;
+    height: 410px;
+    padding: 32px 20px;
+    border: 5px solid #080808;
+    border-radius: 26px;
+
+    color: #080808;
+    text-align: center;
+    text-decoration: none;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+/* 카드 색상과 기울기 */
+.response-leak {
+    background: #f9b5d7;
+    transform: rotate(8deg);
+}
+
+.response-identity {
+    background: #bfd7fa;
+    transform: rotate(-8deg);
+}
+
+.response-phishing {
+    background: #d8fb63;
+    transform: rotate(8deg);
+}
+
+/* 첫 번째와 세 번째 카드가 앞에 표시 */
+.response-item:first-child,
+.response-item:last-child {
+    z-index: 1;
+}
+
+/* 카드 아이콘 */
+.response-icon {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 16px;
+    object-fit: contain;
+}
+
+/* 공통 h3 스타일 유지 */
+.response-card-title {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.response-card-description {
+    margin: 4px 0 0;
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+/* 카드 hover */
+.response-leak:hover,
+.response-phishing:hover {
+    transform: rotate(8deg) translateY(-10px);
+}
+
+.response-identity:hover {
+    transform: rotate(-8deg) translateY(-10px);
+}
+
+.response-item:hover,
+.response-item:focus-within {
+    z-index: 2;
+}
+
+.response-link:focus-visible,
+.response-card:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 5px;
+}
+
+/* ============ response-area ============= */
+
+/* 권리와 제도 */
+.rights-area {
+    background: #fff;
+    color: #222;
+}
+
+.rights-area,
+.rights-area * {
+    box-sizing: border-box;
+}
+
+.rights-area>.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+
+    width: calc(100% - 40px);
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+/* 왼쪽 설명 */
+.rights-content {
+    flex: 0 0 595px;
+}
+
+/* 공통 h2 스타일 유지 */
+.rights-title {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.rights-description {
+    margin: 32px 0 0;
+    color: #454545;
+    font-family: "Pretendard", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+/* 오른쪽 서비스 */
+.rights-services {
+    flex: 1;
+    min-width: 0;
+}
+
+/* 전체보기 */
+.rights-more {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    margin: 0 0 24px auto;
+
+    color: #222;
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+.rights-more:hover {
+    color: #0B50FD;
+}
+
+/* 카드 4개 */
+.rights-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rights-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 310px;
+    padding: 32px 12px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 6px 24px rgb(0 0 0 / 12%);
+
+    color: #222;
+    text-align: center;
+    text-decoration: none;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.rights-card:hover {
+    transform: translateY(-8px);
+}
+
+/* 공통 h4 스타일 유지 */
+.rights-card-title {
+    margin: 24px 0 0;
+    white-space: nowrap;
+}
+
+.rights-card-description {
+    margin: 8px 0 0;
+    color: #454545;
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+/* 이미지 아이콘 */
+.rights-icon {
+    display: block;
+    flex-shrink: 0;
+    width: 86px;
+    height: 86px;
+    object-fit: contain;
+}
+
+/* ============ rights-area ============= */
+
+/* 개인정보 보호 배너 */
+.protect-banner {
+    background: #0B50FD;
+}
+
+.protect-banner,
+.protect-banner * {
+    box-sizing: border-box;
+}
+
+.protect-banner>.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+    width: calc(100% - 40px);
+    max-width: 1720px;
+    min-height: 496px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* 왼쪽 문구 */
+.protect-banner-content {
+    flex: 1;
+}
+
+/* 공통 h2 스타일 유지 */
+.protect-banner-title {
+    margin: 0;
+    color: #fff;
+}
+
+.protect-banner-title span {
+    display: block;
+    white-space: nowrap;
+}
+
+.protect-banner-title span:last-child {
+    color: #f875ce;
+}
+
+.protect-banner-description {
+    margin: 32px 0 0;
+    color: #fff;
+    font-family: "Pretendard", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+/* 오른쪽 캐릭터 */
+.protect-banner-character {
+    display: block;
+    flex-shrink: 0;
+    width: 780px;
+    height: 376px;
+    object-fit: contain;
+}

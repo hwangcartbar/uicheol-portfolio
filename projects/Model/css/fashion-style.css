@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+.nav .on a {
+    color: #dd741e;
+    font-weight: 700;
+    border-bottom: 2px solid #cdcdcd;
+}
+
+.gnb .nav .on a::after {
+    display: none;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/Fashion-img/Fashion-main\ img.webp) no-repeat center/cover;
+
+    margin-bottom: 50px;
+
+    position: relative;
+}
+
+.main .text {
+    text-align: center;
+
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main .text h1 {
+    font-size: 82px;
+    letter-spacing: 5px;
+}
+
+.main .text h2 {
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+.fashion-profile {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    margin-bottom: 100px;
+}
+
+.fashion-profile .profile-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.fashion-profile .profile-box .box {
+    border: 2px solid #222;
+    transition: 0.4s;
+}
+
+.fashion-profile .profile-box .box:hover {
+    border: 2px solid #cdcdcd;
+}
+
+.fashion-profile .profile-box .box .text {
+    padding: 10px;
+}
+
+.fashion-profile .profile-box .box .text h3 {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* 작업물에서 포트폴리오로 돌아가기 */
+.portfolio-back {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2147483647;
+    padding: 13px 20px;
+    border-radius: 30px;
+    background: #1b2420;
+    color: #fff;
+    box-shadow: 0 3px 18px #0003;
+    font: 14px sans-serif;
+    text-decoration: none;
+}
+
+.portfolio-back:focus-visible {
+    outline: 3px solid #7b943f;
+    outline-offset: 4px;
+}

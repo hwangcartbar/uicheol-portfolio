@@ -1,0 +1,349 @@
+@charset "utf-8";
+@import url(./common.css);
+
+
+/* 자가진단 히어로 */
+.diagnostics-hero {
+    background: #f9b5d7;
+    overflow: hidden;
+}
+
+.diagnostics-hero,
+.diagnostics-hero * {
+    box-sizing: border-box;
+}
+
+.diagnostics-hero>.inner {
+    position: relative;
+    min-height: 630px;
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+/* 왼쪽 내용 */
+.diagnostics-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* common.css의 h1 스타일 유지 */
+.diagnostics-hero-title {
+    margin: 0;
+    color: #080808;
+}
+
+.diagnostics-hero-title span {
+    display: block;
+    white-space: nowrap;
+}
+
+.diagnostics-hero-title span:last-child {
+    color: #0B50FD;
+}
+
+/* 설명 */
+.diagnostics-hero-description {
+    margin: 32px 0 0;
+    color: #454545;
+    font-family: "Pretendard", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+/* 안내 태그 */
+.diagnostics-hero-tags {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin: 44px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.diagnostics-hero-tags li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background: #f8f9fc;
+
+    color: #454545;
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+}
+
+/* 오른쪽 캐릭터 */
+.diagnostics-hero-character {
+    position: absolute;
+    z-index: 1;
+    right: -100px;
+    bottom: 0;
+
+    display: block;
+    width: 750px;
+    height: auto;
+    pointer-events: none;
+}
+
+
+/* 자가진단 설문 */
+.diagnosis-survey {
+    padding: 80px 0;
+}
+
+.diagnosis-survey>.inner {
+    position: relative;
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 70px;
+}
+
+.survey-card {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 80px 68px;
+    border-radius: 28px;
+    background: #fff;
+    color: #222;
+}
+
+/* 상단 단계 */
+.survey-steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 0 18px;
+    padding: 0 0 0 114px;
+    list-style: none;
+}
+
+.survey-steps li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #bfd8ff;
+    font-family: "Gmarket Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.survey-steps li>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #bfd8ff;
+    color: #fff;
+    font-family: "Pretendard", sans-serif;
+}
+
+.survey-steps li.is-active {
+    color: #1450ff;
+}
+
+.survey-steps li.is-active>span {
+    background: #1450ff;
+}
+
+/* 진행률 */
+.survey-progress {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.survey-count {
+    flex-shrink: 0;
+    margin: 0;
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.survey-progress-track {
+    flex: none;
+    width: 35%;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #f4f4f4;
+}
+
+.survey-progress-fill {
+    width: 0;
+    height: 100%;
+    border-radius: inherit;
+    background: #1450ff;
+    transition: width 0.25s ease;
+}
+
+/* 문항 */
+.survey-question {
+    margin: 60px 0 20px;
+    font-family: "Gmarket Sans", sans-serif;
+    font-size: clamp(40px, 4.17vw, 80px);
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    white-space: pre-line;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+.survey-question:focus {
+    outline: none;
+}
+
+.survey-description {
+    margin: 0;
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* YES / NO */
+.survey-answers {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10%;
+    min-width: 0;
+    margin: 54px 0 0;
+    padding: 0;
+    border: 0;
+}
+
+.survey-option {
+    position: relative;
+    cursor: pointer;
+}
+
+.survey-option input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.survey-option-box {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    box-sizing: border-box;
+    min-height: 120px;
+    padding: 24px 48px;
+    border: 2px solid #e2e2e2;
+    border-radius: 30px;
+    background: #fff;
+    font-family: "Pretendard", sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.survey-option-circle {
+    position: relative;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #a0a0a0;
+    border-radius: 50%;
+}
+
+.survey-option input:checked+.survey-option-box {
+    border-color: #1450ff;
+    background: #c1d8fa;
+}
+
+.survey-option input:checked+.survey-option-box .survey-option-circle {
+    border-color: #1450ff;
+    background: #1450ff;
+}
+
+.survey-option input:checked+.survey-option-box .survey-option-circle::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 16px;
+    height: 28px;
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    transform: rotate(45deg);
+}
+
+.survey-option input:focus-visible+.survey-option-box {
+    outline: 3px solid #222;
+    outline-offset: 5px;
+}
+
+/* 이미지 이동 버튼 */
+.survey-arrow {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 274px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.survey-prev {
+    left: 0;
+}
+
+.survey-next {
+    right: 0;
+}
+
+.survey-arrow img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.survey-arrow:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.survey-arrow:focus-visible {
+    outline: 3px solid #1450ff;
+    outline-offset: 4px;
+}
+
+.survey-complete {
+    margin: 30px 0 0;
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    color: #1450ff;
+}
+
+.survey-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+}

@@ -1,0 +1,492 @@
+@charset "utf-8";
+
+
+.intro {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 1;
+    padding: 0;
+
+    background: url("../img/mb_store.webp") no-repeat center / cover;
+}
+
+
+/* ========================================
+   STORE PAGE
+======================================== */
+
+.store-page {
+    width: 100%;
+    background-color: #fff;
+}
+
+
+/* ========================================
+   STORE SECTION
+======================================== */
+
+.store-section {
+    width: 100%;
+    padding: 90px 0 120px;
+}
+
+
+/* ========================================
+   STORE INNER
+======================================== */
+
+.store-inner {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   CATEGORY
+======================================== */
+
+.store-category {
+    display: flex;
+    align-items: center;
+
+    gap: 36px;
+
+    padding-bottom: 24px;
+    margin-bottom: 38px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* 카테고리 버튼 */
+
+.store-category-btn {
+    padding: 0;
+
+    border: 0;
+    background: none;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+
+    cursor: pointer;
+}
+
+
+/* 선택된 카테고리 */
+
+.store-category-btn.is-active {
+    font-weight: 600;
+    color: #111;
+}
+
+
+/* 카테고리 hover */
+
+.store-category-btn:hover {
+    color: #111;
+}
+
+
+/* ========================================
+   PRODUCT LIST
+======================================== */
+
+.store-product-list {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    column-gap: 32px;
+    row-gap: 58px;
+
+    width: 100%;
+}
+
+
+/* ========================================
+   PRODUCT CARD
+======================================== */
+
+.store-product-card {
+    width: 100%;
+}
+
+
+.store-product-link {
+    display: block;
+
+    color: #111;
+    text-decoration: none;
+}
+
+
+/* ========================================
+   PRODUCT IMAGE
+======================================== */
+
+.store-product-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    margin-bottom: 18px;
+
+    background-color: #f5f5f5;
+}
+
+
+.store-product-img img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+/* ========================================
+   PRODUCT INFO
+======================================== */
+
+.store-product-info {
+    width: 100%;
+}
+
+
+/* 상품명 */
+
+.store-product-name {
+    font-family: "Pretendard Variable";
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+
+    line-height: 1.4;
+    letter-spacing: -1;
+}
+
+
+/* 가격 */
+
+.store-product-price {
+    font-size: 17px;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* ========================================
+   PAGINATION
+======================================== */
+
+.store-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 28px;
+
+    margin-top: 80px;
+}
+
+
+/* 페이지 버튼 */
+
+.store-page-btn,
+.store-page-next {
+    padding: 0;
+
+    border: 0;
+    background: none;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #777;
+
+    cursor: pointer;
+}
+
+
+/* 현재 페이지 */
+
+.store-page-btn.is-active {
+    font-weight: 700;
+    color: #111;
+}
+
+
+/* hover */
+
+.store-page-btn:hover,
+.store-page-next:hover {
+    color: #111;
+}
+
+
+/* 다음 버튼 */
+
+.store-page-next {
+    font-size: 18px;
+}
+
+.store-product-cart {
+    display: none;
+}
+
+
+
+/* ========================================
+   MOBILE STORE - 430px
+======================================== */
+
+@media screen and (max-width: 430px) {
+
+    /* ========================================
+       STORE PAGE
+    ======================================== */
+
+    .store-page {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .intro {
+        width: 100%;
+        height: 260px;
+
+        padding: 0;
+        margin: 0;
+
+        position: relative;
+
+        background:
+            url(../img/store_bg_m.webp) no-repeat center / cover;
+    }
+
+    /* ========================================
+       STORE SECTION
+    ======================================== */
+
+    .store-section {
+        width: 100%;
+        padding: 20px 0 70px;
+    }
+
+
+    /* ========================================
+       STORE INNER
+    ======================================== */
+
+    .store-inner {
+        width: 390px;
+        max-width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+
+
+    /* ========================================
+       CATEGORY
+    ======================================== */
+
+    .store-category {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+
+        gap: 0;
+
+        padding-bottom: 14px;
+        margin-bottom: 20px;
+
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    .store-category-btn {
+        padding: 0;
+
+        border: 0;
+        background: none;
+
+        font-size: 13px;
+        font-weight: 400;
+
+        color: #777;
+
+        cursor: pointer;
+    }
+
+
+    .store-category-btn.is-active {
+        font-weight: 600;
+        color: #111;
+    }
+
+
+    /* ========================================
+       PRODUCT LIST
+    ======================================== */
+
+    .store-product-list {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        column-gap: 18px;
+        row-gap: 28px;
+
+        width: 100%;
+    }
+
+
+    /* ========================================
+       PRODUCT CARD
+    ======================================== */
+
+    .store-product-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    .store-product-link {
+        display: block;
+
+        width: 100%;
+
+        color: #111;
+        text-decoration: none;
+    }
+
+
+    /* ========================================
+       PRODUCT IMAGE
+    ======================================== */
+
+    .store-product-img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+
+        margin-bottom: 6px;
+
+        overflow: hidden;
+
+        background-color: #f5f5f5;
+    }
+
+
+    .store-product-img img {
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        transition: none;
+    }
+
+
+    /* ========================================
+       CART BUTTON
+    ======================================== */
+
+    .store-product-cart {
+        width: 100%;
+        height: 30px;
+
+        margin-bottom: 9px;
+
+        border: 1px solid #ddd;
+        border-radius: 8px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #fff;
+
+        font-size: 12px;
+        font-weight: 400;
+
+        color: #777;
+        text-decoration: none;
+    }
+
+
+    /* ========================================
+       PRODUCT INFO
+    ======================================== */
+
+    .store-product-info {
+        width: 100%;
+    }
+
+
+    .store-product-name {
+        margin-bottom: 4px;
+
+        font-size: 11px;
+        font-weight: 400;
+
+        line-height: 1.4;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+    .store-product-price {
+        font-size: 15px;
+        font-weight: 700;
+
+        line-height: 1.3;
+    }
+
+
+    /* ========================================
+       PAGINATION
+    ======================================== */
+
+    .store-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 22px;
+
+        margin-top: 45px;
+    }
+
+
+    .store-page-btn,
+    .store-page-next {
+        padding: 0;
+
+        border: 0;
+        background: none;
+
+        font-size: 13px;
+
+        color: #777;
+
+        cursor: pointer;
+    }
+
+
+    .store-page-btn.is-active {
+        font-weight: 700;
+        color: #111;
+    }
+
+}

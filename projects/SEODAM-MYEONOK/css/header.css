@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* =========================================
+   HEADER - PC
+========================================= */
+
+.header {
+    width: 100%;
+    height: 80px;
+
+    padding: 10px 0;
+
+    position: fixed;
+
+    z-index: 100;
+
+    transition: 0.5s;
+}
+
+
+/* 헤더 hover */
+.header:hover,
+.header:focus {
+    background: #fff;
+}
+
+
+/* =========================================
+   HEADER INNER
+========================================= */
+
+.header .inner {
+    display: flex;
+    align-items: center;
+
+    gap: 100px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.header .inner .logo {
+    width: 85px;
+    height: 57px;
+}
+
+
+.header .inner .logo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =========================================
+   PC GNB
+========================================= */
+
+.header .inner .gnb ul {
+    display: flex;
+
+    gap: 32px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #fff;
+
+    transition: 0.5s;
+}
+
+
+.header .inner .gnb ul li a:hover {
+    font-weight: 800;
+}
+
+
+.header:hover .inner .gnb ul {
+    color: #282828;
+}
+
+
+/* =========================================
+   MOBILE 요소
+
+   PC에서는 전부 숨김
+========================================= */
+
+.header .mobile-menu-btn {
+    display: none;
+}
+
+
+.header .mobile-menu {
+    display: none;
+}
+
+
+
+/* =========================================
+   HEADER - MOBILE 430px
+========================================= */
+
+@media screen and (max-width: 430px) {
+
+
+    /* -------------------------------------
+       HEADER
+    ------------------------------------- */
+
+    .header {
+        width: 100%;
+        height: 70px;
+
+        padding: 0;
+
+        background: #fff;
+    }
+
+
+    /*
+        width / 좌우 padding은
+        common.css의 .inner가 담당
+    */
+
+    .header .inner {
+        height: 70px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 0;
+    }
+
+
+    /* -------------------------------------
+       LOGO
+    ------------------------------------- */
+
+    .header .inner .logo {
+        width: 65px;
+        height: auto;
+    }
+
+
+    .header .inner .logo img {
+        display: block;
+
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* -------------------------------------
+       PC GNB 숨김
+    ------------------------------------- */
+
+    .header .inner .gnb {
+        display: none;
+    }
+
+
+    /* -------------------------------------
+       햄버거 버튼
+    ------------------------------------- */
+
+    .header .mobile-menu-btn {
+        width: 24px;
+        height: 18px;
+
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        flex-shrink: 0;
+
+        border: 0;
+
+        background: transparent;
+
+        cursor: pointer;
+    }
+
+
+    .header .mobile-menu-btn span {
+        display: block;
+
+        width: 24px;
+        height: 2px;
+
+        background: #272522;
+    }
+
+
+    /* =====================================
+       MOBILE MENU
+    ===================================== */
+
+    .header .mobile-menu {
+        display: block;
+
+        position: fixed;
+
+        top: 0;
+        right: 0;
+
+        width: 100%;
+        height: 100vh;
+
+        background: #fff;
+
+        z-index: 99999;
+
+        /*
+            기본 상태:
+            오른쪽 화면 밖
+        */
+        transform: translateX(100%);
+
+        /*
+            오른쪽 → 왼쪽
+        */
+        transition: transform 0.4s ease;
+    }
+
+
+    /* 메뉴 열림 */
+    .header .mobile-menu.active {
+        transform: translateX(0);
+    }
+
+
+    /* =====================================
+       MOBILE MENU TOP
+    ===================================== */
+
+    .header .mobile-menu-top {
+        width: 100%;
+        height: 90px;
+
+        padding: 0 28px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background: #fff;
+    }
+
+
+    /* -------------------------------------
+       메뉴 안 로고
+    ------------------------------------- */
+
+    .header .mobile-menu-logo {
+        display: block;
+
+        width: 67px;
+        height: auto;
+    }
+
+
+    .header .mobile-menu-logo img {
+        display: block;
+
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* -------------------------------------
+       X 버튼
+    ------------------------------------- */
+
+    .header .mobile-menu-close {
+        width: 24px;
+        height: 24px;
+
+        padding: 0;
+
+        position: relative;
+
+        flex-shrink: 0;
+
+        border: 0;
+
+        background: transparent;
+
+        cursor: pointer;
+    }
+
+
+    .header .mobile-menu-close span {
+        width: 22px;
+        height: 2px;
+
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        background: #272522;
+    }
+
+
+    .header .mobile-menu-close span:first-child {
+        transform:
+            translate(-50%, -50%) rotate(45deg);
+    }
+
+
+    .header .mobile-menu-close span:last-child {
+        transform:
+            translate(-50%, -50%) rotate(-45deg);
+    }
+
+
+    /* =====================================
+       MOBILE GNB
+    ===================================== */
+
+    .header .mobile-gnb {
+        width: 100%;
+
+        background: #F6F3ED;
+    }
+
+
+    .header .mobile-gnb a {
+        width: 100%;
+        height: 72px;
+
+        padding: 0 40px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+
+        color: #272522;
+
+        font-size: 19px;
+        font-weight: 600;
+
+        line-height: 1;
+
+        text-decoration: none;
+
+        border-bottom: 1px solid #D8D1C5;
+    }
+
+
+    .header .mobile-gnb a:last-child {
+        border-bottom: 0;
+    }
+
+}
